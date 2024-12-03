@@ -20,7 +20,7 @@ btn.forEach((el) => {
 // 이미지번호변수(전역변수)
 let iNum = 1;
 function changeImg(e) {
-  e.preventDefault()
+  e.preventDefault();
 
   // (1) 함수호출 확인(this확인)
   console.log("나야나!", this);
