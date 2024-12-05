@@ -2,6 +2,11 @@
 
 @import url(./core.css);
 
+
+/*********************************************** 슬라이드slide **********************************************/
+
+
+/*********************************************** 슬라이드 slide **********************************************/
 html {
   margin: 0 auto;
   width: 100%;
@@ -248,7 +253,7 @@ main {
   font-weight: bold;
 }
 
-figcaption {
+figure {
   position: absolute;
   top: 20%;
   right: 20%;
@@ -257,6 +262,7 @@ figcaption {
 .arrow2 {
   transform: rotateY(180deg);
 }
+
 
 /* main_4 */
 .main_4 {
