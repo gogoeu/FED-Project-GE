@@ -450,6 +450,7 @@ figcaption {
 .under_5 ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .delay h2 {
@@ -468,12 +469,26 @@ figcaption {
   list-style: none;
   justify-content: space-between;
   /* 안먹어? */
-  width: 50%;
+  width: 48%;
   /* vertical-align: top; */
+
+}/* 
+.under_5 ul li:nth-last-of-type(2) {
+  width:40%;
 }
+.under_5 ul li:nth-last-of-type(3) {
+  width:40%;
+}
+.under_5 ul li:nth-last-of-type(3) {
+  width:40%;
+} */
 
 .under_5 ul li span {
   font-size:2.2rem;
+}
+
+.li_03,.li_04 {
+  margin-top: 8%;
 }
 .under_5 .li_04 p {
   margin: 0;
@@ -561,12 +576,6 @@ figcaption {
   }
 }
 
-.li_03 {
-  width:30%;
-}
-.li_03,.li_04 {
-  margin-top: 8%;
-}
 .li_04 p {
   font-size: 4rem;
 }
