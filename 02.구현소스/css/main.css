@@ -64,6 +64,7 @@ ul.slide {
 html {
   margin: 0 auto;
   width: 100%;
+  font-size: 10px;
 }
 
 body {
@@ -215,7 +216,7 @@ main {
   text-align: center;
   color: #f00;
   transform: rotate(-10deg) translateY(100%);
-  font-size: 4.5em;
+  font-size: 5rem;
   font-family: "Yesteryear", Arial, Helvetica;
   margin-bottom: 5%;
 }
@@ -297,7 +298,7 @@ main {
   color: #fff;
   transform: rotate(356deg);
   font-family: "Yesteryear", Arial, Helvetica;
-  font-size: 5em;
+  font-size: 5rem;
 }
 
 .main_3 .frisch {
@@ -306,7 +307,7 @@ main {
   display: flex;
   /* position: absolute; */
   z-index: 1;
-  font-size: 7em;
+  font-size: 11rem;
   font-weight: bold;
 }
 
@@ -331,7 +332,7 @@ figcaption {
 }
 
 .main_4 > h2 {
-  font-size: 15em;
+  font-size: 28rem;
   right: 0%;
   margin: 0 auto;
   text-align: right;
@@ -341,7 +342,7 @@ figcaption {
 }
 
 .main_4 p {
-  font-size: 3em;
+  font-size: 4rem;
   /* text-align: start; */
 }
 
@@ -361,19 +362,19 @@ figcaption {
 .att p {
   color: #f00;
   transform: rotate(356deg);
-  font-size: 4.5em;
+  font-size: 5rem;
   font-family: "Yesteryear", Arial, Helvetica;
 }
 
 .att h2 {
-  font-size: 4em;
+  font-size: 4rem;
   font-family: "Graduate", Arial, Helvetica;
   text-transform: uppercase;
 }
 
 .att span {
   white-space: pre-line;
-  font-size: 2.2em;
+  font-size: 2.2rem;
 }
 
 .zum {
@@ -391,7 +392,7 @@ figcaption {
   border-radius: 30px;
   text-decoration: none;
   color: #fff;
-  font-size: 1.3em;
+  font-size: 2.4rem;
   font-weight: bold;
   font-family: "Teko", Arial, Helvetica;
   padding: 1% 2%;
@@ -407,7 +408,7 @@ figcaption {
 
 .main_5 .flow_2 {
   /* transform: translateX(-50%); */
-  font-size: 10em;
+  font-size: 28rem;
   text-transform: uppercase;
   font-weight: bold;
   font-family: "Teko", Arial, Helvetica;
@@ -440,9 +441,10 @@ figcaption {
 
 .under_5 > p {
   color: #f00;
-  transform: rotate(350deg) translateY(-500%);
+  transform: rotate(350deg) translateY(-100%);
   /* ****************************************************************************************************👏👏👏👏👏👏👏👏*** */
   font-family: "Yesteryear", Arial, Helvetica;
+  font-size: 5rem;
 }
 
 .under_5 ul {
@@ -452,7 +454,7 @@ figcaption {
 
 .delay h2 {
   font-family: "Teko", Arial, Helvetica;
-  font-size: 7em;
+  font-size: 11rem;
   text-transform: uppercase;
   font-weight: bold;
   margin: 0;
@@ -471,9 +473,8 @@ figcaption {
 }
 
 .under_5 ul li span {
-  font-size:2em;
+  font-size:2.2rem;
 }
-
 .under_5 .li_04 p {
   margin: 0;
   font-size: 2.3em;
@@ -485,7 +486,7 @@ figcaption {
   margin-top: 5%;
 }
 .under_5 .li_04 div a {
-  font-size: 1.3em;
+  font-size: 2.2rem;
   font-weight: bold;
   font-family: "Teko", Arial, Helvetica;
   padding: 1% 2%;
@@ -514,7 +515,7 @@ figcaption {
 .li_01 .li_01a a {
   text-decoration: none;
   border-radius: 30px;
-  font-size: 1.5em;
+  font-size: 2.4rem;
 }
 
 /* 버튼 */
@@ -560,8 +561,14 @@ figcaption {
   }
 }
 
+.li_03 {
+  width:30%;
+}
+.li_03,.li_04 {
+  margin-top: 8%;
+}
 .li_04 p {
-  font-size: 1.5em;
+  font-size: 4rem;
 }
 
 .li_04 span {
@@ -618,12 +625,11 @@ figcaption {
   margin: 0;
   font-family: "Yesteryear", Arial, Helvetica;
   color: #f00;
-  font-size: 3em;
+  font-size: 5rem;
   transform: rotate(350deg);
 }
-
 .main_6 .spimg {
-  font-size: 6em;
+  font-size: 11rem;
   font-family: "Teko", Arial, Helvetica;
   color: #fff;
   text-transform: uppercase;
@@ -633,6 +639,21 @@ figcaption {
 .main_6 .bimg div {
   display: flex;
   justify-content: center;
+}
+.main_6 a {
+  font-size: 2.4rem;
+  padding: 1.5% 3%;
+}
+.main_6 a:nth-of-type(1) {
+  background-color: #f00;
+  border-radius: 30px;
+  color: #fff;
+  margin-right: 3%;
+}
+.main_6 a:nth-of-type(2) {
+  background-color: #FFF;
+  border-radius: 30px;
+  /* color: #fff; */
 }
 
 /* main_7 */
@@ -659,7 +680,7 @@ figcaption {
   list-style: none;
   white-space: nowrap;
   animation: flow2 10s linear infinite;
-  font-size: 10em;
+  font-size: 28rem;
 }
 
 @keyframes flow3 {
@@ -701,11 +722,19 @@ figcaption {
   text-align: center;
   /* margin-top: 20%; */
   background-color: #222;
+  padding: 5% 0;
 }
 
 .social a {
   color: #fff;
-  border: 2px solid #f00;
+  border: 4px solid #f00;
+  /* background-color: #f00; */
+  border-radius: 40px;
+  font-size: 2.4rem;
+  padding: 0.5% 2%;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: -2px;
 }
 
 /* main_8 */
@@ -742,16 +771,16 @@ figcaption {
 }
 
 .footer ul li h2 {
-  font-size: 2em;
+  font-size: 4rem;
   font-weight: bold;
 }
 
 .footer ul li span {
-  font-size: 1.5em;
+  font-size: 2rem;
 }
 
 .footer ul li p {
-  font-size: 2.5em;
+  font-size: 2.8rem;
   white-space: nowrap;
 }
 
