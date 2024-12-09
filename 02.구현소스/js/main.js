@@ -11,9 +11,12 @@ a.addEventListener("click", function () {
   // hspan.style.backgroundColor='black';
   hddul.classList.toggle("active");
 });
-console.log(window.scrollTop);
+// console.log(window.scrollTop);
 
-/* let abtn = document.querySelectorAll('.abtn');
-abtn.addEventListener('click',function(e){
-  e.preventDefault();
-}) */
+let abtn = document.querySelectorAll('.abtn');
+abtn.forEach(el=>{
+  el.addEventListener('click',function(e){
+    e.preventDefault();
+    console.log('sdd');
+  })
+})

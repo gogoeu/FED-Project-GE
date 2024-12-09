@@ -193,7 +193,7 @@ main {
 .flow_1 ul li {
   list-style: none;
   color: #fff;
-  font-size: 180px;
+  font-size: 28rem;
   white-space: nowrap;
   animation: rip-ani 10s linear infinite;
 }
@@ -762,7 +762,7 @@ figcaption {
   display: flex;
   /* justify-content: space-around; */
   width: 75%;
-  aspect-ratio: 10/5;
+  /* aspect-ratio: 10/5; */
   /* position: absolute; */
 }
 
@@ -777,7 +777,12 @@ figcaption {
 .footer ul li {
   white-space: pre-line;
   margin-right: 7%;
+  flex-wrap: wrap;
 }
+/* 
+.footer ul li:nth-last-child(3) {
+  margin-right: 70%;
+} */
 
 .footer ul li h2 {
   font-size: 4rem;
