@@ -860,7 +860,7 @@ figcaption {
 }
 
 .hddul.active {
-  left: 40%;
+  left: 50%;
 }
 
 .hddul.active li {
@@ -871,6 +871,7 @@ figcaption {
 
 .hddul.active li:nth-of-type(2) {
   left: 00%;
+  transition-delay: 1s;
 }
 
 .hddul.active li:nth-of-type(3) {
