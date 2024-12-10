@@ -4,17 +4,13 @@
 import myFn from "./my_function.js";
 
 
-
-
-
 const slide = myFn.qs('.slide');
-
 // 순번변수
 const section = myFn.qs('.section');
 
 
 
-
+//버튼
 let seqNum = 0;
 myFn.qs('.ab2').onclick = ()=>{
     seqNum++;
@@ -26,22 +22,22 @@ myFn.qs('.ab1').onclick = ()=>{
     seqNum--;
     seqnum()
     if(seqNum<0)seqNum = 5;
-}
-function seqnum(){
-    slide.style.translate = (seqNum*-100)+'%';
-    slide.style.transition = '.4s ease-in-out';
+    
 }
 
-
+// 자동 넘김
 var sec = document.querySelector('section');
 var secLen = sec.querySelectorAll('img').length;
-
 setInterval(interval,2000);
-// var num = 0;
 function interval() {
-    // num++;
     seqNum++;
-    // if (num == secLen) num = 0;
+
     if (seqNum == secLen) seqNum = 0;
     seqnum()
+}
+
+// translate 함수
+function seqnum(){
+    slide.style.translate = (seqNum*-100)+'%';
+    slide.style.transition = '1s ease-in-out';
 }
