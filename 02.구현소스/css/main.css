@@ -867,19 +867,25 @@ figcaption {
   left: 50%;
 }
 
+.hddul li {
+  translate: 1000%;
+  transition: .5s ease-out;
+}
 .hddul.active li {
   position: relative;
-  left: -100%;
-  /* transition:translateX 1s; */
 }
 
+.hddul.active li:nth-of-type(1) {  
+  translate: -200%;
+}
 .hddul.active li:nth-of-type(2) {
-  left: 00%;
-  transition-delay: 1s;
+  translate: -100%;
+  transition-delay: .5s;
 }
 
 .hddul.active li:nth-of-type(3) {
-  left: 100%;
+  translate: 0%;
+  transition-delay: 1s;
 }
 
 /*************************** 메뉴 나오기 ***************************/
