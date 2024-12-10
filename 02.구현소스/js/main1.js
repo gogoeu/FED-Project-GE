@@ -3,27 +3,34 @@
 // 나의 함수 불러오기
 import myFn from "./my_function.js";
 
-
-const slide = myFn.qs('.slide');
+const slide = myFn.qs(".slide");
 // 순번변수
-const section = myFn.qs('.section');
-
-
+const section = myFn.qs(".section");
 
 //버튼
 let seqNum = 0;
-myFn.qs('.ab2').onclick = ()=>{
-    seqNum++;
-    if(seqNum>4)seqNum = 0;
-    // 슬라이드 CSS변경하기
-    seqnum()
+myFn.qs(".ab2").onclick = () => {
+  seqNum++;
+  if (seqNum > 4) {
+    seqNum = 0;
+    slide.style.transition = ".3s ease-in-out";
+  } else {
+    slide.style.transition = "1s ease-in-out";
+  }
+  // 슬라이드 CSS변경하기
+  seqnum();
 };
-myFn.qs('.ab1').onclick = ()=>{
-    seqNum--;
-    seqnum()
-    if(seqNum<0)seqNum = 5;
-    // ??
-}
+myFn.qs(".ab1").onclick = () => {
+  seqNum--;
+  if (seqNum < 0) {
+    seqNum = 4;
+    slide.style.transition = ".3s ease-in-out";
+  } else {
+    slide.style.transition = "1s ease-in-out";
+  }
+  seqnum();
+  // ??
+};
 
 // 자동 넘김
 // var sec = document.querySelector('section');
@@ -36,7 +43,7 @@ myFn.qs('.ab1').onclick = ()=>{
 // }
 
 // translate 함수
-function seqnum(){
-    slide.style.translate = (seqNum*-100)+'%';
-    slide.style.transition = '1s ease-in-out';
+function seqnum() {
+  console.log(seqNum);
+  slide.style.translate = seqNum * -100 + "%";
 }
