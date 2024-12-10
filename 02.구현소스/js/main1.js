@@ -22,7 +22,7 @@ myFn.qs('.ab1').onclick = ()=>{
     seqNum--;
     seqnum()
     if(seqNum<0)seqNum = 5;
-    
+    // ??
 }
 
 // 자동 넘김
@@ -31,7 +31,6 @@ var secLen = sec.querySelectorAll('img').length;
 setInterval(interval,2000);
 function interval() {
     seqNum++;
-
     if (seqNum == secLen) seqNum = 0;
     seqnum()
 }
