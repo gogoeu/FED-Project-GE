@@ -760,14 +760,14 @@ figcaption {
   background-color: #fff;
   display: flex;
   position: relative;
+  padding: 50px;
+  box-sizing: border-box;
 }
 
 .footer ul {
   display: flex;
-  /* justify-content: space-around; */
+  flex-wrap: wrap;
   width: 75%;
-  /* aspect-ratio: 10/5; */
-  /* position: absolute; */
 }
 
 .footer .bgsvg {
@@ -780,13 +780,13 @@ figcaption {
 
 .footer ul li {
   white-space: pre-line;
-  margin-right: 7%;
-  flex-wrap: wrap;
+  width: 33.33%;
 }
-/* 
-.footer ul li:nth-last-child(3) {
-  margin-right: 70%;
-} */
+
+
+.footer ul li:last-child {
+  width: 100%;
+}
 
 .footer ul li h2 {
   font-size: 4rem;
@@ -802,15 +802,16 @@ figcaption {
   white-space: nowrap;
 }
 
-.footer ul li .sp_02 {
+.footer ul li div {
   /* white-space:nowrap; */
   white-space: pre-line;
+  line-height: 2;
 }
 
 .footer ul li:nth-of-type(2) div {
   display: flex;
+  gap: 40px;
 }
-
 .footer ul li .sp_02 {
   text-align: right;
 }
@@ -840,17 +841,15 @@ figcaption {
   height: 35px;
 }
 
-.final {
-  /* flex-wrap:wrap; */
+.footer .final {
+  display: flex;
+  gap: 2em;
   width: 100%;
   font-size: 0.8em;
-  text-align: top;
-  align-items: top;
+  line-height: .8em;
 }
-
 .final svg {
   width: 100px;
-  /* height: 100px; */
 }
 
 /*************************** 메뉴 나오기 ***************************/
