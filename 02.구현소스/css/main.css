@@ -944,8 +944,41 @@ header a .hdd.active {
   margin: 10% auto;
   width: 90%;
   text-align: center;
+  color:#fff;
 }
 .s_main_1 p {
+  margin: 0;
   font-size: 5rem;
   color: #f00;
+  font-family: 'Yesteryear', Arial, Helvetica;
+  transform: rotate(356deg);
+}
+.s_main_1 h2 {
+  margin: 0;
+  font-size: 11rem;
+  letter-spacing: -10px;
+  text-transform: uppercase;
+}
+.s_main_1 i {
+  font-size: 3rem;
+  font-style: normal;
+  font-family: 'Teko', Arial, Helvetica;
+}
+.s_main_1 span {
+  font-size: 2.2rem;
+}
+.s_main_1 h3 {
+  font-size: 4rem;
+  font-family: 'Graduate', Arial, Helvetica;
+}
+.s_main_1 div {
+  margin-top: 5%;
+}
+.s_main_1 div a {
+  font-family: 'Teko', Arial, Helvetica;
+  font-size: 2.4rem;
+  background-color: #f00;
+  border-radius: 30px;
+  color: #fff;
+  padding: 1% 3%;
 }
