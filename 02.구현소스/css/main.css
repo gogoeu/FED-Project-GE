@@ -962,10 +962,24 @@ header a .hdd.active {
 }
 .s_main_1 i {
   font-size: 3rem;
+  font-style: normal;
+  font-family: 'Teko', Arial, Helvetica;
 }
 .s_main_1 span {
-
+  font-size: 2.2rem;
 }
-.s_main_1 a {
-
+.s_main_1 h3 {
+  font-size: 4rem;
+  font-family: 'Graduate', Arial, Helvetica;
+}
+.s_main_1 div {
+  margin-top: 5%;
+}
+.s_main_1 div a {
+  font-family: 'Teko', Arial, Helvetica;
+  font-size: 2.4rem;
+  background-color: #f00;
+  border-radius: 30px;
+  color: #fff;
+  padding: 1% 3%;
 }
