@@ -44,8 +44,8 @@ ul.slide {
   margin-right:15%;
 }
 .abtn img {
-  width:50px;
-  height:50px;
+  width:23px;
+  height:23px;
 }
 .slBtn {
   color: #000;
@@ -185,7 +185,7 @@ main {
 .flow_1 ul {
   display: flex;
   position: absolute;
-  bottom: -3vh;
+  bottom: -8vh;
   width: 100%;
   overflow: hidden;
 

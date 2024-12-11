@@ -33,17 +33,18 @@ myFn.qs(".ab1").onclick = () => {
 };
 
 // 자동 넘김
-// var sec = document.querySelector('section');
-// var secLen = sec.querySelectorAll('img').length;
-// setInterval(interval,2000);
-// function interval() {
-//     seqNum++;
-//     if (seqNum == secLen) seqNum = 0;
-//     seqnum()
-// }
+var sec = document.querySelector('section');
+var secLen = sec.querySelectorAll('img').length;
+setInterval(interval,2000);
+function interval() {
+    seqNum++;
+    if (seqNum == secLen) seqNum = 0;
+    seqnum()
+}
 
 // translate 함수
 function seqnum() {
-  console.log(seqNum);
+  // console.log(seqNum);
   slide.style.translate = seqNum * -100 + "%";
+  slide.style.transition = ".5s ease-in-out";
 }
