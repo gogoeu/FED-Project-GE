@@ -65,6 +65,7 @@ html {
   margin: 0 auto;
   width: 100%;
   font-size: 10px;
+  border-radius: 30px;
 }
 
 body {
@@ -83,6 +84,7 @@ img {
 
 a {
   text-decoration: none;
+  color:#000;
 }
 
 ul {
@@ -255,7 +257,19 @@ main {
 }
 
 .meat {
+  margin-top: 5%;
   text-align: center;
+
+  /********************************************************************************************scroll복붙  */
+  /* transform: translateY(20%); */
+  scale:0;
+  opacity: 0;
+  transition: 1.2s ease-in-out;
+}
+.meat.on {
+  /* transform: translateY(0); */
+  scale:1;
+  opacity: 1;
 }
 
 .meat img {
@@ -340,9 +354,16 @@ figcaption {
   right: 0%;
   margin: 0 auto;
   text-align: right;
-
   font-family: "Teko", Arial, Helvetica;
   text-transform: uppercase;
+
+  scale:0;
+  opacity: 0;
+  transition: 1.2s ease-in-out;
+}
+.main_4 > h2.on {
+  scale:1;
+  opacity: 1;
 }
 
 .main_4 p {
@@ -356,11 +377,27 @@ figcaption {
   justify-content: space-around;
   text-align: center;
   font-family: "Graduate", Arial, Helvetica;
+  
+  scale:0;
+  opacity: 0;
+  transition: 1.2s ease-in-out;
+}
+.main_4 .hol.on {
+  scale:1;
+  opacity: 1;
 }
 
 .att {
   text-align: center;
   margin-top: 10%;
+
+  scale:0;
+  opacity: 0;
+  transition: 1.2s ease-in-out;
+}
+.att.on {
+  scale:1;
+  opacity: 1;
 }
 
 .att p {
@@ -377,8 +414,20 @@ figcaption {
 }
 
 .att span {
-  white-space: pre-line;
+  /* white-space: pre-line; */
   font-size: 2.2rem;
+  font-family: 'Arial', Helvetica, sans-serif;
+}
+.att a {
+  padding: 1% 2%;
+  font-size: 2.4rem;
+  color: #FFF;
+  background-color: #f00;
+  border-radius: 30px;
+  font-family: "Teko", Arial, Helvetica;
+}
+.att > div {
+  margin-top: 5%;
 }
 
 .zum {
@@ -441,6 +490,7 @@ figcaption {
   margin: 0 auto;
   /* transform: translateY(-20%); */
   white-space: pre-line;
+  font-family: 'Arial', Helvetica, sans-serif; /* arial폰트 */
 }
 
 .under_5 > p {
@@ -455,6 +505,8 @@ figcaption {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  line-height: 1;
+  letter-spacing: -0.1rem;
 }
 
 .delay h2 {
@@ -514,16 +566,21 @@ figcaption {
 .li_01 {
   transform: translateX(-100%);
   opacity: 0;
-  white-space: pre-line;
-  animation: li01 1s linear forwards;
+  transition: 1.2s ease-in-out;
+  /* white-space: pre-line; */
+  /* animation: li01 1s linear forwards; */
 }
-
+.li_01.on {
+  transform: translateX(0%);
+  opacity: 1;
+}
+/* 
 @keyframes li01 {
   100% {
     transform: translateX(0%);
     opacity: 1;
   }
-}
+} */
 
 .li_01 .li_01a {
   display: flex;
@@ -556,9 +613,20 @@ figcaption {
   rotate: 5deg;
   opacity: 0;
   transform: translateX(100%);
-  animation: li02 1s linear forwards;
-}
+  /* animation: li02 1s linear forwards; */
 
+  scale:0;
+  opacity: 0;
+  transition: 1.2s ease-in-out;
+}
+.li_02.on {
+  rotate: 0deg;
+  transform: translateX(0%);
+
+  scale:1;
+  opacity: 1;
+}
+/* 
 @keyframes li02 {
   100% {
     rotate: 0deg;
@@ -566,18 +634,42 @@ figcaption {
     opacity: 1;
   }
 }
-
+ */
 .span_01 {
   /* opacity: 0; */
   transform: translateY(100%);
   animation: s01 0.2s 1s linear forwards;
 }
-
 @keyframes s01 {
   100% {
     /* opacity: 1; */
     transform: translateY(00%);
   }
+}
+
+.li_03 {
+  rotate: 355deg;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: 1.2s ease-in-out;
+}
+.li_03.on {
+  rotate: 360deg;
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.li_04 {
+  opacity: 0;
+  transform: translateX(100%);
+  scale:0;
+  opacity: 0;
+  transition: 1.2s ease-in-out;
+}
+.li_04.on {
+  transform: translateX(0%);
+  scale:1;
+  opacity: 1;
 }
 
 .li_04 p {
@@ -590,7 +682,7 @@ figcaption {
 
 .li_04 a {
   border: 2px solid #f00;
-  border-radius: 20px;
+  border-radius: 30px;
   text-decoration: none;
   color: #000;
 }
@@ -656,6 +748,7 @@ figcaption {
 .main_6 a {
   font-size: 2.4rem;
   padding: 1.5% 3%;
+  font-family: "Teko", Arial, Helvetica;
 }
 .main_6 a:nth-of-type(1) {
   background-color: #f00;
@@ -671,6 +764,7 @@ figcaption {
 
 /* main_7 */
 .main_7 {
+  margin-top: 5%;
   width: 100%;
   color: #fff;
 }
@@ -681,11 +775,12 @@ figcaption {
 
 .flow_3 ul {
   display: flex;
-  rotate: 350deg;
+  rotate: 355deg;
   width: 120%;
-  translate: 0 -60%;
+  translate: 0 -35%;
   padding-bottom: 9%;
   background-color: #222;
+  padding:0;
 }
 
 .flow_3 ul li {
@@ -715,7 +810,7 @@ figcaption {
 
 .sns_pi li {
   width: 23%;
-  aspect-ratio: 4/6;
+  aspect-ratio: 3/4;
   list-style: none;
 }
 
@@ -742,7 +837,7 @@ figcaption {
   color: #fff;
   border: 4px solid #f00;
   /* background-color: #f00; */
-  border-radius: 40px;
+  border-radius: 30px;
   font-size: 2.4rem;
   padding: 0.5% 2%;
   text-transform: uppercase;
@@ -829,7 +924,7 @@ figcaption {
 .a_sns a {
   background-color: #f00;
   color: #fff;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
 .a_sns img {
