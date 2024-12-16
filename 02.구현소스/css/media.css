@@ -245,9 +245,18 @@
         width:90%;
         margin: 0 auto;
     }
+    .footer ul li h2 {
+        font-size: 3rem;
+    }
     .footer ul {
         display: flex;
         justify-content: space-around;
+    }
+    .footer ul li span {
+        font-size: 1.6rem;
+    }
+    .footer ul li p {
+        font-size: 2rem;
     }
 }
 
