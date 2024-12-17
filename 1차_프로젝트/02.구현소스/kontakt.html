@@ -3,21 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>리뉴얼</title>
+    <title>Kontakt</title>
     <link rel="stylesheet" href="./css/main.css" />
     <script src="./js/main.js" defer></script>
+    <!-- 외부JS삽입 : 모듈타입 -->
+    <script type="module" src="js/main1.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <!-- https://metzgerei-heigl.de/ -->
-
-    <!-- 찌그러진 원 동그랗게, asd 들어갈땐 transition없게, asd끼리 따로 transition 가능?, 
-     👏👏원페이지하면 overflow:hidden 들어가는데 sticky 가능?, scroll 기능들은 어떻게? -->
-
     <header>
       <img src="./images/logo.svg" alt="logo" />
       <a href="#">
-        <nav>
+        <nav class="nav">
           <span></span>
           <span></span>
           <span></span>
@@ -31,222 +32,26 @@
       </ul>
     </header>
 
-    <div class="flow_1">
-      <ul>
-        <li>Rip(PChen) in Peace</li>
-        <li>Rip(PChen) in Peace</li>
-        <li>Rip(PChen) in Peace</li>
-        <li>Rip(PChen) in Peace</li>
-      </ul>
+    <div class="s_main_1">
+        <div class="write">
+            <p>Meat 'n Greet</p>
+            <h2>schreib uns oder ruf an</h2>
+            <i>Metzgerei Heigl e.K.<br></i>
+            <span>Hauptstraße 17<br>
+                87734 Benningen</span>
+            <h3>T +49 8331 9412155</h3>
+            <p>Meat shopping</p>
+            <span>Bestellungen dürft ihr gerne über unseren Onlineshop aufgeben!</span>
+            <div>
+              <a href="#">Online Meat Shop</a>
+            </div>
+        </div>
     </div>
 
-    <main>
-      <div class="main_1">
-        <video class="video" autoplay muted loop>
-          <source src="./images/header-video.mp4" type="video/mp4" />
-        </video>
-      </div>
+    
 
-      <div class="main_2">
-        <p>servus & hello</p>
-        <span> Bei der Metzgerei Heigl Deinem Meatmaster im Allgäu</span>
-        <figure class="knife">
-          <span></span>
-          <img src="./images/line_knifes.svg" alt="knife" />
-          <span></span>
-        </figure>
-        <figure class="meat">
-          <img src="./images/illu-beef.svg" alt="beef" />
-          <img src="./images/illu-chicken.svg" alt="chicken" />
-          <img src="./images/illu-pork.svg" alt="pork" />
-        </figure>
-      </div>
 
-      <!--  -->
-      <div class="main_3">
-        <div>
-            <p>beste Qualität</p>
-            <span class="frisch">FRISCH REGIONL HEIGL </span>
-          <figcaption>
-            <a href="#" class="abtn ab1">
-              <img src="images/arrow.svg" alt="왼쪽이동버튼" />
-            </a>
-            <a href="#" class="abtn ab2">
-              <img src="images/arrow.svg" alt="오른쪽이동버튼" />
-            </a>
-          </figcaption>
-        </div>
-        <section>
-          <ul class="slide">
-            <li>
-              <img src="./images/meat_01.jpg" alt="slide" />
-            </li>
-            <li>
-              <img src="./images/meat_02.jpg" alt="slide" />
-            </li>
-            <li>
-              <img src="./images/meat_03.jpg" alt="slide" />
-            </li>
-            <li>
-              <img src="./images/meat_04.jpg" alt="slide" />
-            </li>
-            <li>
-              <img src="./images/meat_05.jpg" alt="slide" />
-            </li>
-          </ul>
-        </section>
-      </div>
 
-      <div class="main_4">
-        <h2>Hol's dir</h2>
-        <div class="hol">
-          <dlv class="left">
-            <span class="hol_1">
-              <p>Heigls butchery</p>
-              Metzgerei Heigl Hauptstraße 17 | D-87734 Benningen Telefon +49
-              8331 9412155
-            </span>
-          </dlv>
-          <div class="center">
-            <span class="hol_0">
-              <p>Heigl on the<br />road</p>
-              Wochenmarkt Memmingen Dienstag: 8:00 Uhr bis 12:30 Uhr Samstag:
-              7:00 Uhr bis 12:30 Uhr
-
-              <h3>Gartenbau Wager | Trunkelsberg</h3>
-
-              Freitag: 9:00 Uhr bis 14:00 Uhr
-            </span>
-          </div>
-          <div class="right">
-            <span class="hol_0">
-              <p>Fleischomaten</p>
-              24/7 Fresh Heigl-Stuff Hauptstraße 17 | D-87734 Benningen Colmarer
-              Str. 46 | D-87700 Memmingen Bodensee Str. 44 | D-87700 Memmingen
-            </span>
-          </div>
-        </div>
-        <div class="att">
-          <p>Attention please</p>
-          <h2>In der Heigl Manufaktur tut sich was!</h2>
-          <span
-            ><strong>Montags und dienstags</strong> bleibt unser Laden
-            geschlossen. Ihr habt trotzdem Bock auf frische Wiener und Co.? Dann
-            bestellt einfach in unserem Onlineshop! Für unsere lokale Lieferung
-            entfällt ab sofort der Mindestbestellwert. Somit steht eurer
-            Brotzeit mit Heigl Stuff nichts mehr im Wege! P.S. Die Lieferung ist
-            eh frei Haus - also worauf noch warten?</span
-          >
-        </div>
-      </div>
-      <!-- main_4 -->
-      <!-- main_5 -->
-      <div class="main_5">
-        <div class="flow_2">
-          <ul>
-            <li>homemade . aus liebe zum Fleisch</li>
-            <li>homemade . aus liebe zum Fleisch</li>
-          </ul>
-        </div>
-        <div class="under_5">
-          <p>Wenn Fleisch</p>
-          <ul>
-            <li class="li_01">
-              <div class="delay">
-                <h2>dann Heigl</h2>
-                <span class="span_01"
-                  >Wir bei Heigl haben unser traditionsreiches Handwerk
-                  gelernt.Mit</span
-                >
-                <span class="span_02"
-                  >Leidenschaft und Erfahrung arbeiten wir jeden Tag für beste
-                  und</span
-                >
-                <span class="span_03"
-                  >frischeste Produkte für qualitätsbewusste Menschen wie
-                  dich.</span
-                >
-                <span class="span_04"
-                  >Unsere hochwertigen Produkte vertreiben wir in unserer
-                  Metzgerei</span
-                >
-                <span class="span_05"
-                  >in Benningen, über unseren Metzgerei Online-Shop,
-                  unseren</span
-                >
-                <span class="span_06"
-                  >Lieferservice, in Kühlautomaten und auf dem Wochenmarkt
-                  in</span
-                >
-                <span class="span_07"
-                  >Memmingen. Und wenn du eine Feier planst und keinen Bock
-                  hast,</span
-                >
-                <span class="span_08"
-                  >selbst zu kochen, sind wir dein Catering-Service im
-                  Allgäu.</span
-                >
-              </div>
-              <div class="li_01a">
-                <a href="#" class="unsere">unsere besten</a>
-                <a href="#" class="heigl">The Heigl History</a>
-              </div>
-            </li>
-            <li class="li_02"><img src="./images/dann.jpg" alt="dann" /></li>
-            <li class="li_03">
-              <img src="./images/dann_02.jpg" alt="dann2" />
-            </li>
-            <li class="li_04">
-              <p>The butcher you can trust</p>
-              <span>
-                Unseren Kunden ist es wichtig zu wissen, woher das Lebensmittel
-                kommt. Neben Nachhaltigkeit und Regionalität, worauf wir
-                wahnsinnig viel Wert legen, steht bei uns auch besonders das
-                Tierwohl, der Respekt zum Tier und der sensible Umgang mit dem
-                Lebewesen im Vordergrund. Und ob du´s glaubst oder nicht, das
-                wirkt sich auch auf den Geschmack aus. Glücklich schmeckt
-                einfach besser.
-              </span>
-              <div>
-                <a href="#">Unsere Werte</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- main_5 -->
-      <div class="main_6">
-        <!-- <img class="bimg" src="./images/hamburger.jpg" alt="bimg"> -->
-        <div class="bimg">
-          <p class="pimg">Catering de luxe</p>
-          <span class="spimg">MEAT uns für deine Party</span>
-          <div>
-            <a href="#">Direkt Anfragen</a>
-            <a href="#">Catering Service</a>
-          </div>
-        </div>
-      </div>
-      <!-- main_6 -->
-      <div class="main_7">
-        <div class="flow_3">
-          <ul>
-            <li>Follow us on Social Meatia</li>
-            <li>Follow us on Social Meatia</li>
-          </ul>
-        </div>
-        <div class="sns">
-          <ul class="sns_pi">
-            <li><img src="./images/sns_pi_01.jpg" alt="sns01" /></li>
-            <li><img src="./images/sns_pi_02.jpg" alt="sns02" /></li>
-            <li><img src="./images/sns_pi_03.jpg" alt="sns03" /></li>
-            <li><img src="./images/sns_pi_04.jpg" alt="sns04" /></li>
-          </ul>
-        </div>
-      </div>
-      <!-- main_7 -->
-      <div class="social">
-        <a href="#">Social Media Wall</a>
-      </div>
       <div class="main_8">
         <div>
           <div class="footer">

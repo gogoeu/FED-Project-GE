@@ -328,6 +328,8 @@ main {
   z-index: 1;
   font-size: 11rem;
   font-weight: bold;
+  font-family: 'Teko',Arial,Helvetica;
+  line-height: 1;
 }
 
 figcaption {
@@ -736,6 +738,16 @@ figcaption {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  scale:0;
+  opacity: 0;
+  transition: 1.2s ease-in-out;
+
+  /* transform-origin: center center; */
+}
+.main_6 .bimg.on {
+  scale:1;
+  opacity: 1;
 }
 
 .main_6 .bimg p {
@@ -793,6 +805,7 @@ figcaption {
   padding-bottom: 9%;
   background-color: #222;
   padding:0;
+  font-family: 'Teko', Arial, Helvetica;;
 }
 
 .flow_3 ul li {
@@ -812,6 +825,14 @@ figcaption {
 .sns {
   width: 90%;
   margin: 0 auto;
+
+  scale:0;
+  opacity: 0;
+  transition: 1.2s ease-in-out;
+}
+.sns.on {
+  scale:1;
+  opacity: 1;
 }
 
 .sns_pi {
@@ -885,6 +906,7 @@ figcaption {
   right: 5%;
   top: -12%;
   width: 500px;
+  
 }
 
 .footer ul li {

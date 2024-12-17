@@ -1,15 +1,101 @@
 @charset "utf-8";
 
 @import url(./core.css);
+/* 쇼핑몰 PJ 메인 CSS - main.css  */
 
 
-/*********************************************** 슬라이드slide **********************************************/
 
 
-/*********************************************** 슬라이드 slide **********************************************/
+/********************************* SLIDE *****/
+.spoa_ab {
+  font-size: 2.4rem;
+  background-color: #FFF;
+  border-radius: 30px;
+  padding: 1% 3%;
+  position: absolute;
+  right:0;
+  /* top:-15%; */
+}
+.spoa {
+  color: #fff;
+  /* position: absolute; */
+  font-size: 5rem;
+  width: 30%;
+  font-family: 'Teko', Arial, Helvetica;
+  margin-left: 5%;
+}
+.spoa a {
+  border-radius: 30px;
+  border: 3px solid #f00;
+  font-size: 2.4rem;
+  padding: 1% 3%;
+  color: #fff;
+}
+.spoa_2 {
+  font-size: 2.4rem;
+  font-family: 'Graduate', Arial, Helvetica;
+  line-height: 1;
+}
+section {
+  /*슬라이드부모*/
+  position: relative;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  transform: translateY(-35%);
+}
+/* 슬라이드 박스 */
+ul.slide {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.slide li {
+  width: 100%;
+  flex-shrink: 0;
+  flex-basis: 100%;
+  /* 부모박스크기만큼 줄어들지 않음 -> 0 */
+  /* 가로크기를 부모박스 크기에 맞춤! */
+  /* height 값은 flex박스 자식요소에서
+  등분할시 자동 100%임! */
+}
+
+.slide li img {
+  width: 70%;
+  /* height: 100%; */
+  object-fit: cover;
+  /*이미지는 박스에 맞춤!*/
+  /* 이미지 비율유지 채우기! */
+}
+.abtnDiv {
+  margin-right:15%;
+}
+.abtn img {
+  width:23px;
+  height:23px;
+}
+.slBtn {
+  color: #000;
+  background-color: #fff;
+  padding: 1% 3%;
+  font-size: 1.5em;/*  */
+  display: block;
+  text-align: right;
+  /* position: absolute; */
+  /* right: 5%; */
+  /* top: -5%; */
+}
+
+/********************************** SLIDE ****/
+
 html {
   margin: 0 auto;
   width: 100%;
+  font-size: 10px;
+  border-radius: 30px;
 }
 
 body {
@@ -28,6 +114,7 @@ img {
 
 a {
   text-decoration: none;
+  color:#000;
 }
 
 ul {
@@ -65,6 +152,10 @@ header nav span {
   width: 30px;
   height: 1px;
   background-color: #fff;
+}
+header nav span.active {
+  background-color: #000;
+  z-index: 1;
 }
 
 header nav span:nth-of-type(2) {
@@ -126,7 +217,7 @@ main {
 .flow_1 ul {
   display: flex;
   position: absolute;
-  bottom: -3vh;
+  bottom: -8vh;
   width: 100%;
   overflow: hidden;
 
@@ -138,7 +229,7 @@ main {
 .flow_1 ul li {
   list-style: none;
   color: #fff;
-  font-size: 180px;
+  font-size: 28rem;
   white-space: nowrap;
   animation: rip-ani 10s linear infinite;
 }
@@ -160,9 +251,10 @@ main {
   margin: 0 auto;
   text-align: center;
   color: #f00;
-  transform: rotate(-20deg) translateY(100%);
-  font-size: 2em;
+  transform: rotate(-10deg) translateY(100%);
+  font-size: 5rem;
   font-family: "Yesteryear", Arial, Helvetica;
+  margin-bottom: 5%;
 }
 
 .main_2 span {
@@ -171,7 +263,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 100px;
+  font-size: 11rem;
   font-family: "Teko", Arial, Helvetica;
   text-transform: uppercase;
   text-align: center;
@@ -195,7 +287,19 @@ main {
 }
 
 .meat {
+  margin-top: 5%;
   text-align: center;
+
+  /********************************************************************************************scroll복붙  */
+  /* transform: translateY(20%); */
+  scale:0;
+  opacity: 0;
+  transition: 1.2s ease-in-out;
+}
+.meat.on {
+  /* transform: translateY(0); */
+  scale:1;
+  opacity: 1;
 }
 
 .meat img {
@@ -225,35 +329,39 @@ main {
   margin: 0 auto;
 }
 
-.main_3 div {
-  /* display: flex; */
-  position: relative;
-  /* z-index: 1; */
+.main_3 > div {
+  display: flex;
+  /* position: relative; */
+  z-index: 1;
+  justify-content: space-between;
+  /* position: absolute; */
 }
 
-.main_3 div img {
+/* .main_3 div img {
   right: 0%;
   top: 0%;
-}
+} */
 
 .main_3 p {
   color: #fff;
   transform: rotate(356deg);
   font-family: "Yesteryear", Arial, Helvetica;
+  font-size: 5rem;
 }
 
 .main_3 .frisch {
   white-space: pre-line;
   color: #fff;
-  display: flex;
-}
-
-.main_3 .frisch {
-  font-size: 5em;
+  /* display: flex; */
+  /* position: absolute; */
+  z-index: 1;
+  font-size: 11rem;
   font-weight: bold;
+  font-family: 'Teko',Arial,Helvetica;
+  line-height: 1;
 }
 
-figure {
+figcaption {
   position: absolute;
   top: 20%;
   right: 20%;
@@ -262,7 +370,9 @@ figure {
 .arrow2 {
   transform: rotateY(180deg);
 }
-
+.ab2 img {
+  transform: rotateY(180deg);
+}
 
 /* main_4 */
 .main_4 {
@@ -272,49 +382,84 @@ figure {
 }
 
 .main_4 > h2 {
-  font-size: 15em;
+  font-size: 28rem;
   right: 0%;
   margin: 0 auto;
   text-align: right;
-
   font-family: "Teko", Arial, Helvetica;
   text-transform: uppercase;
+
+  scale:0;
+  opacity: 0;
+  transition: 1.2s ease-in-out;
+}
+.main_4 > h2.on {
+  scale:1;
+  opacity: 1;
 }
 
 .main_4 p {
-  font-size: 3em;
+  font-size: 4rem;
   /* text-align: start; */
 }
 
 .main_4 .hol {
   display: flex;
-  white-space: pre-line;
+  /* white-space: pre-line; */
   justify-content: space-around;
   text-align: center;
   font-family: "Graduate", Arial, Helvetica;
+  
+  scale:0;
+  opacity: 0;
+  transition: 1.2s ease-in-out;
+}
+.main_4 .hol.on {
+  scale:1;
+  opacity: 1;
 }
 
 .att {
   text-align: center;
   margin-top: 10%;
+
+  scale:0;
+  opacity: 0;
+  transition: 1.2s ease-in-out;
+}
+.att.on {
+  scale:1;
+  opacity: 1;
 }
 
 .att p {
   color: #f00;
   transform: rotate(356deg);
-  font-size: 3em;
+  font-size: 5rem;
   font-family: "Yesteryear", Arial, Helvetica;
 }
 
-.att span {
-  white-space: pre-line;
-  font-size: 1.4em;
-}
-
 .att h2 {
-  font-size: 2em;
+  font-size: 4rem;
   font-family: "Graduate", Arial, Helvetica;
   text-transform: uppercase;
+}
+
+.att span {
+  /* white-space: pre-line; */
+  font-size: 2.2rem;
+  font-family: 'Arial', Helvetica, sans-serif;
+}
+.att a {
+  padding: 1% 2%;
+  font-size: 2.4rem;
+  color: #FFF;
+  background-color: #f00;
+  border-radius: 30px;
+  font-family: "Teko", Arial, Helvetica;
+}
+.att > div {
+  margin-top: 5%;
 }
 
 .zum {
@@ -332,7 +477,7 @@ figure {
   border-radius: 30px;
   text-decoration: none;
   color: #fff;
-  font-size: 1.3em;
+  font-size: 2.4rem;
   font-weight: bold;
   font-family: "Teko", Arial, Helvetica;
   padding: 1% 2%;
@@ -348,7 +493,7 @@ figure {
 
 .main_5 .flow_2 {
   /* transform: translateX(-50%); */
-  font-size: 10em;
+  font-size: 28rem;
   text-transform: uppercase;
   font-weight: bold;
   font-family: "Teko", Arial, Helvetica;
@@ -376,30 +521,42 @@ figure {
   width: 90%;
   margin: 0 auto;
   /* transform: translateY(-20%); */
+  /* white-space: pre-line; */
+  font-family: 'Arial', Helvetica, sans-serif; /* arial폰트 */
 }
 
 .under_5 > p {
   color: #f00;
-  transform: rotate(350deg) translateY(-500%);
-  /* ************************************************************** */
+  transform: rotate(350deg) translateY(-100%);
+  /* ****************************************************************************************************👏👏👏👏👏👏👏👏*** */
   font-family: "Yesteryear", Arial, Helvetica;
+  font-size: 5rem;
 }
 
 .under_5 ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  /* line-height: 1; */
+  letter-spacing: 0.12rem;
 }
 
 .delay h2 {
   font-family: "Teko", Arial, Helvetica;
-  font-size: 7em;
+  font-size: 11rem;
   text-transform: uppercase;
   font-weight: bold;
   margin: 0;
 }
-
-.delay span {
-  font-size: 1.4em;
+.delay_div {
+  width:80%;
+  font-size:2.2rem;
+}
+.delay_div:nth-of-type(1) {
+  margin: 0 0 5% 0%;
+}
+.delay_div:nth-of-type(2) {
+  /* margin-top: 5%; */
 }
 
 .under_5 ul li img {
@@ -410,25 +567,39 @@ figure {
   list-style: none;
   justify-content: space-between;
   /* 안먹어? */
-  width: 50%;
+  width: 48%;
   /* vertical-align: top; */
+
+}/* 
+.under_5 ul li:nth-last-of-type(2) {
+  width:40%;
+}
+.under_5 ul li:nth-last-of-type(3) {
+  width:40%;
+}
+.under_5 ul li:nth-last-of-type(3) {
+  width:40%;
+} */
+
+.under_5 ul li span {
+  /* font-size:2.2rem; */
 }
 
+.li_03,.li_04 {
+  margin-top: 8%;
+}
 .under_5 .li_04 p {
-  font-size: 2.3em;
+  margin: 0;
+  font-size: 4rem;
   text-transform: uppercase;
   font-family: "Graduate", Arial, Helvetica;
-}
-
-.under_5 .li_04 span {
-  font-size: 1.4em;
 }
 
 .under_5 .li_04 div {
   margin-top: 5%;
 }
 .under_5 .li_04 div a {
-  font-size: 1.3em;
+  font-size: 2.2rem;
   font-weight: bold;
   font-family: "Teko", Arial, Helvetica;
   padding: 1% 2%;
@@ -437,16 +608,22 @@ figure {
 .li_01 {
   transform: translateX(-100%);
   opacity: 0;
-  white-space: pre-line;
-  animation: li01 1s linear forwards;
+  transition: 1.2s ease-in-out;
+  /* white-space: pre-line; */
+  /* animation: li01 1s linear forwards; */
+  /* margin-left:5%; */
 }
-
+.li_01.on {
+  transform: translateX(0%);
+  opacity: 1;
+}
+/* 
 @keyframes li01 {
   100% {
     transform: translateX(0%);
     opacity: 1;
   }
-}
+} */
 
 .li_01 .li_01a {
   display: flex;
@@ -457,7 +634,7 @@ figure {
 .li_01 .li_01a a {
   text-decoration: none;
   border-radius: 30px;
-  font-size: 1.5em;
+  font-size: 2.4rem;
 }
 
 /* 버튼 */
@@ -468,7 +645,7 @@ figure {
 }
 
 .li_01a .heigl {
-  border: 2px solid #f00;
+  border: 3px solid #f00;
   margin-left: 3%;
   color: #000;
   padding: 1% 3%;
@@ -479,9 +656,20 @@ figure {
   rotate: 5deg;
   opacity: 0;
   transform: translateX(100%);
-  animation: li02 1s linear forwards;
-}
+  /* animation: li02 1s linear forwards; */
 
+  scale:0;
+  opacity: 0;
+  transition: 1.2s ease-in-out;
+}
+.li_02.on {
+  rotate: 0deg;
+  transform: translateX(0%);
+
+  scale:1;
+  opacity: 1;
+}
+/* 
 @keyframes li02 {
   100% {
     rotate: 0deg;
@@ -489,13 +677,12 @@ figure {
     opacity: 1;
   }
 }
-
+ */
 .span_01 {
   /* opacity: 0; */
   transform: translateY(100%);
   animation: s01 0.2s 1s linear forwards;
 }
-
 @keyframes s01 {
   100% {
     /* opacity: 1; */
@@ -503,17 +690,42 @@ figure {
   }
 }
 
+.li_03 {
+  rotate: 355deg;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: 1.2s ease-in-out;
+}
+.li_03.on {
+  rotate: 360deg;
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.li_04 {
+  opacity: 0;
+  transform: translateX(100%);
+  scale:0;
+  opacity: 0;
+  transition: 1.2s ease-in-out;
+}
+.li_04.on {
+  transform: translateX(0%);
+  scale:1;
+  opacity: 1;
+}
+
 .li_04 p {
-  font-size: 1.5em;
+  font-size: 4rem;
 }
 
 .li_04 span {
-  white-space: pre-line;
+  /* white-space: pre-line; */
 }
 
 .li_04 a {
-  border: 2px solid #f00;
-  border-radius: 20px;
+  border: 3px solid #f00;
+  border-radius: 30px;
   text-decoration: none;
   color: #000;
 }
@@ -545,7 +757,7 @@ figure {
   background-size: cover;
   background-attachment: fixed;
 
-  filter: brightness(0.5);
+  filter: brightness(0.4);
 }
 
 .main_6 .bimg {
@@ -555,18 +767,27 @@ figure {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  scale:0;
+  opacity: 0;
+  transition: 1.2s ease-in-out;
+
+  /* transform-origin: center center; */
+}
+.main_6 .bimg.on {
+  scale:1;
+  opacity: 1;
 }
 
 .main_6 .bimg p {
   margin: 0;
   font-family: "Yesteryear", Arial, Helvetica;
   color: #f00;
-  font-size: 3em;
+  font-size: 5rem;
   transform: rotate(350deg);
 }
-
 .main_6 .spimg {
-  font-size: 6em;
+  font-size: 11rem;
   font-family: "Teko", Arial, Helvetica;
   color: #fff;
   text-transform: uppercase;
@@ -577,9 +798,26 @@ figure {
   display: flex;
   justify-content: center;
 }
+.main_6 a {
+  font-size: 2.4rem;
+  padding: 1.5% 3%;
+  font-family: "Teko", Arial, Helvetica;
+}
+.main_6 a:nth-of-type(1) {
+  background-color: #f00;
+  border-radius: 30px;
+  color: #fff;
+  margin-right: 3%;
+}
+.main_6 a:nth-of-type(2) {
+  background-color: #FFF;
+  border-radius: 30px;
+  /* color: #fff; */
+}
 
 /* main_7 */
 .main_7 {
+  margin-top: 5%;
   width: 100%;
   color: #fff;
 }
@@ -590,11 +828,13 @@ figure {
 
 .flow_3 ul {
   display: flex;
-  rotate: 350deg;
+  rotate: 355deg;
   width: 120%;
-  translate: 0 -60%;
+  translate: 0 -53%;
   padding-bottom: 9%;
   background-color: #222;
+  padding:0;
+  font-family: 'Teko', Arial, Helvetica;;
 }
 
 .flow_3 ul li {
@@ -602,7 +842,7 @@ figure {
   list-style: none;
   white-space: nowrap;
   animation: flow2 10s linear infinite;
-  font-size: 10em;
+  font-size: 28rem;
 }
 
 @keyframes flow3 {
@@ -614,6 +854,14 @@ figure {
 .sns {
   width: 90%;
   margin: 0 auto;
+
+  scale:0;
+  opacity: 0;
+  transition: 1.2s ease-in-out;
+}
+.sns.on {
+  scale:1;
+  opacity: 1;
 }
 
 .sns_pi {
@@ -624,7 +872,7 @@ figure {
 
 .sns_pi li {
   width: 23%;
-  aspect-ratio: 4/6;
+  aspect-ratio: 3/4;
   list-style: none;
 }
 
@@ -644,11 +892,20 @@ figure {
   text-align: center;
   /* margin-top: 20%; */
   background-color: #222;
+  padding: 5% 0;
 }
 
 .social a {
   color: #fff;
-  border: 2px solid #f00;
+  border: 3px solid #f00;
+  /* background-color: #f00; */
+  border-radius: 30px;
+  font-size: 2.4rem;
+  padding: 0.5% 2%;
+  text-transform: uppercase;
+  font-weight: bold;
+  /* letter-spacing: -2px; */
+  font-family: 'Teko', Arial, Helvetica;
 }
 
 /* main_8 */
@@ -661,14 +918,15 @@ figure {
   background-color: #fff;
   display: flex;
   position: relative;
+  padding: 50px;
+  box-sizing: border-box;
 }
 
 .footer ul {
   display: flex;
-  /* justify-content: space-around; */
+  flex-wrap: wrap;
   width: 75%;
-  aspect-ratio: 10/5;
-  /* position: absolute; */
+  z-index: 1;
 }
 
 .footer .bgsvg {
@@ -677,36 +935,43 @@ figure {
   right: 5%;
   top: -12%;
   width: 500px;
+  
 }
 
 .footer ul li {
   white-space: pre-line;
-  margin-right: 7%;
+  width: 33.33%;
+}
+
+
+.footer ul li:last-child {
+  width: 100%;
 }
 
 .footer ul li h2 {
-  font-size: 2em;
+  font-size: 4rem;
   font-weight: bold;
 }
 
 .footer ul li span {
-  font-size: 1.5em;
+  font-size: 2rem;
 }
 
 .footer ul li p {
-  font-size: 2.5em;
+  font-size: 2.8rem;
   white-space: nowrap;
 }
 
-.footer ul li .sp_02 {
+.footer ul li div {
   /* white-space:nowrap; */
   white-space: pre-line;
+  line-height: 2;
 }
 
 .footer ul li:nth-of-type(2) div {
   display: flex;
+  gap: 40px;
 }
-
 .footer ul li .sp_02 {
   text-align: right;
 }
@@ -724,7 +989,7 @@ figure {
 .a_sns a {
   background-color: #f00;
   color: #fff;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
 .a_sns img {
@@ -736,17 +1001,15 @@ figure {
   height: 35px;
 }
 
-.final {
-  /* flex-wrap:wrap; */
+.footer .final {
+  display: flex;
+  gap: 2em;
   width: 100%;
-  font-size: 0.8em;
-  text-align: top;
-  align-items: top;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
 }
-
 .final svg {
   width: 100px;
-  /* height: 100px; */
 }
 
 /*************************** 메뉴 나오기 ***************************/
@@ -760,21 +1023,28 @@ figure {
 }
 
 .hddul.active {
-  left: 40%;
+  left: 50%;
 }
 
+.hddul li {
+  translate: 1000%;
+  transition: .5s ease-out;
+}
 .hddul.active li {
   position: relative;
-  left: -100%;
-  /* transition:translateX 1s; */
 }
 
+.hddul.active li:nth-of-type(1) {  
+  translate: -200%;
+}
 .hddul.active li:nth-of-type(2) {
-  left: 00%;
+  translate: -100%;
+  transition-delay: .5s;
 }
 
 .hddul.active li:nth-of-type(3) {
-  left: 100%;
+  translate: 0%;
+  transition-delay: 1s;
 }
 
 /*************************** 메뉴 나오기 ***************************/
@@ -782,22 +1052,19 @@ figure {
 /***************** 햄버거 메뉴 동그랗게 나오기 *****************/
 header a .hdd {
   position: absolute;
+  top: 0;
+  right: 0;
+  translate: 90% -60%;
+  scale: 0;
   background-color: #fff;
-  width: 0px;
-  height: 0px;
+  width: 200px;
+  aspect-ratio: 1;
   border-radius: 100%;
-  transition: 0.5s;
+  transition: scale .7s ease-out;
 }
 
 header a .hdd.active {
-  background-color: #fff;
-  width: 200vw;
-  height: 200vh;
-  border-radius: 100%;
-  top: 0%;
-  left: 0%;
-  transform: translate(-70%, -20%);
-  overflow: hidden;
+  scale: 50;
 }
 
 /***************** 햄버거 메뉴 동그랗게 나오기 *****************/
@@ -822,3 +1089,57 @@ header a .hdd.active {
   position: sticky;
   top: 0; /* 스크롤 시 상단에 고정 */
 }
+.hol span {
+  font-size: 1.5em;
+}
+.hol figure {
+  font-size: 2.2rem;
+}
+
+
+
+
+/**************************************************************************************서브페이지 */
+.s_main_1 {
+  margin: 10% auto;
+  width: 90%;
+  text-align: center;
+  color:#fff;
+}
+.s_main_1 p {
+  margin: 0;
+  font-size: 5rem;
+  color: #f00;
+  font-family: 'Yesteryear', Arial, Helvetica;
+  transform: rotate(356deg);
+}
+.s_main_1 h2 {
+  margin: 0;
+  font-size: 11rem;
+  letter-spacing: -10px;
+  text-transform: uppercase;
+}
+.s_main_1 i {
+  font-size: 3rem;
+  font-style: normal;
+  font-family: 'Teko', Arial, Helvetica;
+}
+.s_main_1 span {
+  font-size: 2.2rem;
+}
+.s_main_1 h3 {
+  font-size: 4rem;
+  font-family: 'Graduate', Arial, Helvetica;
+}
+.s_main_1 div {
+  margin-top: 5%;
+}
+.s_main_1 div a {
+  font-family: 'Teko', Arial, Helvetica;
+  font-size: 2.4rem;
+  background-color: #f00;
+  border-radius: 30px;
+  color: #fff;
+  padding: 1% 3%;
+}
+
