@@ -46,7 +46,7 @@ function interval() {
 function seqnum() {
   // console.log(seqNum);
   slide.style.translate = seqNum * -100 + "%";
-  slide.style.transition = ".5s ease-in-out";
+  slide.style.transition = "1s ease-in-out";
 }
 
 
