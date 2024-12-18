@@ -5,19 +5,7 @@
         fill:rgb(16,16,16,.3);
         /* background-color: rgb(16,16,16); */
     }
-    
-    .meat,
-    .main_4 > h2,
-    .main_4 .hol,
-    .att,
-    .li_01,
-    .li_02,
-    .li_03,
-    .li_04,
-    .main_6 .bimg,
-    .sns {
-        transition: .3s ease-in-out;
-    }
+
 }
 
 @media screen and (max-width: 1400px) {
@@ -102,7 +90,19 @@
         /* text-align: center; */
         justify-content: center;
     }
-
+    
+    .meat,
+    .main_4 > h2,
+    .main_4 .hol,
+    .att,
+    .li_01,
+    .li_02,
+    .li_03,
+    .li_04,
+    .main_6 .bimg,
+    .sns {
+        transition: .3s ease-in-out;
+    }
 }
 
 
@@ -322,6 +322,9 @@
     }
     .main_2 span {
         font-size: 5.6rem;
+    }
+    .main_3 .abtnDiv {
+        translate: 270% -210%;
     }
     .meat img:nth-of-type(1) {
         width: 10%;

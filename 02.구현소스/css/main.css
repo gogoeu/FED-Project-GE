@@ -63,7 +63,8 @@ ul.slide {
   /* height 값은 flex박스 자식요소에서
   등분할시 자동 100%임! */
 
-  padding-top:10%
+  padding-top:10%;
+  position:relative;
 }
 
 .slide li img {
@@ -992,12 +993,15 @@ figcaption {
 .a_sns {
   display: flex;
   align-items: center;
+  font-size: 2.4rem;
+  font-family: 'Teko', Arial, Helvetica;
 }
 
 .a_sns a {
   background-color: #f00;
   color: #fff;
   border-radius: 30px;
+  padding: 1% 5%;
 }
 
 .a_sns img {
