@@ -5,7 +5,7 @@
         fill:rgb(16,16,16,.3);
         /* background-color: rgb(16,16,16); */
     }
-    
+
 }
 
 @media screen and (max-width: 1400px) {
@@ -14,6 +14,21 @@
     }
     .main_2 span {
         font-size: 9rem;
+    }
+    .main_3 .abtnDiv {
+        margin-top: 21.2%;
+        /* margin-left: 3%; */
+        transform: translateX(30%);
+    }
+    .main_3 .spoa_ab {
+        border-radius: 15px;
+    }
+    .main_3 .spoa {
+        transform: translateY(5%);
+    }
+    .main_3 .spoa a {
+        border-radius: 15px;
+        padding: 3% 9%;
     }
     .main_4 h2 {
         font-size: 20rem;
@@ -74,6 +89,19 @@
     .footer .final {
         /* text-align: center; */
         justify-content: center;
+    }
+    
+    .meat,
+    .main_4 > h2,
+    .main_4 .hol,
+    .att,
+    .li_01,
+    .li_02,
+    .li_03,
+    .li_04,
+    .main_6 .bimg,
+    .sns {
+        transition: .3s ease-in-out;
     }
 }
 
@@ -143,6 +171,7 @@
 }
 
 
+
 @media screen and (max-width: 1040px) {
     .flow_1 ul li {
         font-size: 18rem;
@@ -153,6 +182,9 @@
     .main_2 span {
         font-size: 5.6rem;
     }
+    .main_3 .abtnDiv {
+        translate: 270% -210%;
+    }
     .meat img:nth-of-type(1) {
         width: 10%;
     }
@@ -162,8 +194,47 @@
     .meat img:nth-of-type(3) {
         width: 10%;
     }
+    .slide li {
+        padding-top: 5%;
+        flex-direction: column;
+    }
+    .slide li img {
+        width: 100%;
+    }
+    .slide li br{
+        display: inline-block;
+        content: " ";
+        padding: 0 2px;
+    }
+    .slide li br:nth-of-type(3) {
+        display: block;
+    }
+    .spoa {
+        width: 100%;
+        font-size: 3.4rem;
+    }
+    .main_3 .spoa {
+        transform: translateY(-1%);
+    }
+    .spoa_2,
+    .main_3 .spoa > div {
+        transform: translateY(-35%);
+    }
+    .main_3 .spoa a {
+        padding: 1% 1%;
+    }
+    .spoa_2 {
+        font-size: 1.7rem;
+    }
+
+
+
     .main_3 p {
         font-size: 3rem;
+    }
+    .main_3 .spoa_2 {
+        /* line-height: -1; */
+        line-height: 0rem;
     }
     .main_3 .frisch {
         font-size: 5.6rem;
@@ -281,3 +352,24 @@
     }
 }
 
+@media screen and (max-width: 740px) {
+    .flow_1 ul li {
+        font-size: 12rem;
+    }
+    .left {
+        position: relative;
+        height: auto;
+    }
+    .center {
+        position: relative;
+        height: auto;
+    }
+    .right {
+        position: relative;
+        height: auto;
+    }
+    .hol {
+        flex-direction: column;
+        /* height: 100vh; */
+    }
+}
