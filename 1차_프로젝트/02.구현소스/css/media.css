@@ -353,6 +353,13 @@
 }
 
 @media screen and (max-width: 740px) {
+    header img {
+        width: 120px;
+    }
+    .flow_1 ul {
+        background-color: black;
+        bottom:-1%;
+    }
     .flow_1 ul li {
         font-size: 12rem;
     }
@@ -371,5 +378,23 @@
     .hol {
         flex-direction: column;
         /* height: 100vh; */
+    }
+    .slide li br:nth-of-type(3) {
+        display: block;
+    }
+    .under_5 ul li {
+        width: 100%;
+    }
+    .li_01 .li_01a {
+        margin-bottom: 5%;
+    }
+    .footer ul li {
+        width: 50%;
+    }
+    .footer ul li:last-child {
+        width: 50%;
+    }
+    .footer .final {
+        display: block;
     }
 }
