@@ -220,11 +220,21 @@
     .main_3 .spoa > div {
         transform: translateY(-35%);
     }
+
+    .main_3 .spoa > div {
+        display: flex;
+        gap: 20px; /* 값은 수정하시면돼용*/
+        transform: translateY(0);
+    }
     .main_3 .spoa a {
         padding: 1% 1%;
     }
     .spoa_2 {
         font-size: 1.7rem;
+    }
+
+    .spoa_ab {
+        position: relative;
     }
 
 
