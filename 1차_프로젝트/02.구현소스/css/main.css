@@ -3,26 +3,28 @@
 @import url(./core.css);
 /* 쇼핑몰 PJ 메인 CSS - main.css  */
 
-
-
+html {
+  /* 스티키 영향없이 가로스크롤 없앰! */
+  overflow-x: hidden;
+}
 
 /********************************* SLIDE *****/
 .spoa_ab {
   font-size: 2.4rem;
-  background-color: #FFF;
+  background-color: #fff;
   border-radius: 30px;
   padding: 1% 3%;
   position: absolute;
-  right:0;
-  top:-0%;
-  font-family: 'Teko', Arial, Helvetica;
+  right: 0;
+  top: -0%;
+  font-family: "Teko", Arial, Helvetica;
 }
 .spoa {
   color: #fff;
   /* position: absolute; */
   font-size: 5rem;
   width: 30%;
-  font-family: 'Teko', Arial, Helvetica;
+  font-family: "Teko", Arial, Helvetica;
   margin-left: 5%;
 }
 .spoa a {
@@ -31,10 +33,16 @@
   font-size: 2.4rem;
   padding: 1% 3%;
   color: #000;
+  opacity: 0;
+  transition: opacity .3s ease-out 1.2s;
 }
+.slide li.on .spoa a {
+  opacity: 1;
+}
+
 .spoa_2 {
   font-size: 2.4rem;
-  font-family: 'Graduate', Arial, Helvetica;
+  font-family: "Graduate", Arial, Helvetica;
   line-height: 1;
 }
 .main_3 .spoa a:nth-of-type(1) {
@@ -44,7 +52,7 @@
   color: #fff;
 }
 .spoa a:nth-of-type(2) {
-  border:none;
+  border: none;
 }
 section {
   /*슬라이드부모*/
@@ -72,8 +80,9 @@ ul.slide {
   /* height 값은 flex박스 자식요소에서
   등분할시 자동 100%임! */
 
-  padding-top:10%;
-  position:relative;
+  padding-top: 10%;
+  position: relative;
+  overflow: hidden;
 }
 
 .slide li img {
@@ -93,8 +102,8 @@ ul.slide {
   height: fit-content;
 }
 .abtn img {
-  width:23px;
-  height:23px;
+  width: 23px;
+  height: 23px;
 }
 .abtn img:nth-of-type(1) {
   margin-right: 1%;
@@ -103,7 +112,7 @@ ul.slide {
   color: #000;
   background-color: #fff;
   padding: 1% 3%;
-  font-size: 1.5em;/*  */
+  font-size: 1.5em; /*  */
   display: block;
   text-align: right;
   /* position: absolute; */
@@ -137,7 +146,7 @@ img {
 
 a {
   text-decoration: none;
-  color:#000;
+  color: #000;
 }
 
 ul {
@@ -315,13 +324,13 @@ main {
 
   /********************************************************************************************scroll복붙  */
   /* transform: translateY(20%); */
-  scale:0;
+  scale: 0;
   opacity: 0;
   transition: 1.2s ease-in-out;
 }
 .meat.on {
   /* transform: translateY(0); */
-  scale:1;
+  scale: 1;
   opacity: 1;
 }
 
@@ -380,7 +389,7 @@ main {
   z-index: 1;
   font-size: 11rem;
   font-weight: bold;
-  font-family: 'Teko',Arial,Helvetica;
+  font-family: "Teko", Arial, Helvetica;
   line-height: 1;
 }
 
@@ -412,12 +421,12 @@ figcaption {
   font-family: "Teko", Arial, Helvetica;
   text-transform: uppercase;
 
-  scale:0;
+  scale: 0;
   opacity: 0;
   transition: 1.2s ease-in-out;
 }
 .main_4 > h2.on {
-  scale:1;
+  scale: 1;
   opacity: 1;
 }
 
@@ -432,13 +441,13 @@ figcaption {
   justify-content: space-around;
   text-align: center;
   font-family: "Graduate", Arial, Helvetica;
-  
-  scale:0;
+
+  scale: 0;
   opacity: 0;
   transition: 1.2s ease-in-out;
 }
 .main_4 .hol.on {
-  scale:1;
+  scale: 1;
   opacity: 1;
 }
 
@@ -446,12 +455,12 @@ figcaption {
   text-align: center;
   margin-top: 10%;
 
-  scale:0;
+  scale: 0;
   opacity: 0;
   transition: 1.2s ease-in-out;
 }
 .att.on {
-  scale:1;
+  scale: 1;
   opacity: 1;
 }
 
@@ -471,12 +480,12 @@ figcaption {
 .att span {
   /* white-space: pre-line; */
   font-size: 2.2rem;
-  font-family: 'Arial', Helvetica, sans-serif;
+  font-family: "Arial", Helvetica, sans-serif;
 }
 .att a {
   padding: 1% 2%;
   font-size: 2.4rem;
-  color: #FFF;
+  color: #fff;
   background-color: #f00;
   border-radius: 30px;
   font-family: "Teko", Arial, Helvetica;
@@ -547,7 +556,7 @@ figcaption {
   margin: 0 auto;
   /* transform: translateY(-20%); */
   /* white-space: pre-line; */
-  font-family: 'Arial', Helvetica, sans-serif; /* arial폰트 */
+  font-family: "Arial", Helvetica, sans-serif; /* arial폰트 */
 }
 
 .under_5 > p {
@@ -574,8 +583,8 @@ figcaption {
   margin: 0;
 }
 .delay_div {
-  width:80%;
-  font-size:2.2rem;
+  width: 80%;
+  font-size: 2.2rem;
 }
 .delay_div:nth-of-type(1) {
   margin: 0 0 5% 0%;
@@ -594,8 +603,7 @@ figcaption {
   /* 안먹어? */
   width: 48%;
   /* vertical-align: top; */
-
-}/* 
+} /* 
 .under_5 ul li:nth-last-of-type(2) {
   width:40%;
 }
@@ -610,7 +618,8 @@ figcaption {
   /* font-size:2.2rem; */
 }
 
-.li_03,.li_04 {
+.li_03,
+.li_04 {
   margin-top: 8%;
 }
 .under_5 .li_04 p {
@@ -683,7 +692,7 @@ figcaption {
   transform: translateX(100%);
   /* animation: li02 1s linear forwards; */
 
-  scale:0;
+  scale: 0;
   opacity: 0;
   transition: 1.2s ease-in-out;
 }
@@ -691,7 +700,7 @@ figcaption {
   rotate: 0deg;
   transform: translateX(0%);
 
-  scale:1;
+  scale: 1;
   opacity: 1;
 }
 /* 
@@ -730,13 +739,13 @@ figcaption {
 .li_04 {
   opacity: 0;
   transform: translateX(100%);
-  scale:0;
+  scale: 0;
   opacity: 0;
   transition: 1.2s ease-in-out;
 }
 .li_04.on {
   transform: translateX(0%);
-  scale:1;
+  scale: 1;
   opacity: 1;
 }
 
@@ -791,16 +800,18 @@ figcaption {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%,-50%) scale(0); */
+  translate: -50% -50%;
 
-  scale:0;
+  scale: 0;
   opacity: 0;
   transition: 1.2s ease-in-out;
 
   /* transform-origin: center center; */
 }
 .main_6 .bimg.on {
-  scale:1;
+  /* transform: translate(-50%,-50%) scale(1); */
+  scale: 1;
   opacity: 1;
 }
 
@@ -816,7 +827,7 @@ figcaption {
   font-family: "Teko", Arial, Helvetica;
   color: #fff;
   text-transform: uppercase;
-  white-space: pre-line;
+  white-space: nowrap;
 }
 
 .main_6 .bimg div {
@@ -835,7 +846,7 @@ figcaption {
   margin-right: 3%;
 }
 .main_6 a:nth-of-type(2) {
-  background-color: #FFF;
+  background-color: #fff;
   border-radius: 30px;
   /* color: #fff; */
 }
@@ -858,8 +869,8 @@ figcaption {
   translate: 0 -53%;
   padding-bottom: 9%;
   background-color: #222;
-  padding:0;
-  font-family: 'Teko', Arial, Helvetica;;
+  padding: 0;
+  font-family: "Teko", Arial, Helvetica;
 }
 
 .flow_3 ul li {
@@ -880,12 +891,12 @@ figcaption {
   width: 90%;
   margin: 0 auto;
 
-  scale:0;
+  scale: 0;
   opacity: 0;
   transition: 1.2s ease-in-out;
 }
 .sns.on {
-  scale:1;
+  scale: 1;
   opacity: 1;
 }
 
@@ -930,12 +941,12 @@ figcaption {
   text-transform: uppercase;
   font-weight: bold;
   /* letter-spacing: -2px; */
-  font-family: 'Teko', Arial, Helvetica;
+  font-family: "Teko", Arial, Helvetica;
 }
 
 /* main_8 */
-.main_8{
-    overflow: hidden;
+.main_8 {
+  overflow: hidden;
 }
 .footer {
   width: 90%;
@@ -960,14 +971,12 @@ figcaption {
   right: 5%;
   top: -12%;
   width: 500px;
-  
 }
 
 .footer ul li {
   white-space: pre-line;
   width: 33.33%;
 }
-
 
 .footer ul li:last-child {
   width: 100%;
@@ -1010,7 +1019,7 @@ figcaption {
   display: flex;
   align-items: center;
   font-size: 2.4rem;
-  font-family: 'Teko', Arial, Helvetica;
+  font-family: "Teko", Arial, Helvetica;
 }
 
 .a_sns a {
@@ -1038,6 +1047,7 @@ figcaption {
 }
 .final svg {
   width: 100px;
+  translate: 0 9px;
 }
 
 /*************************** 메뉴 나오기 ***************************/
@@ -1057,18 +1067,18 @@ figcaption {
 
 .hddul li {
   translate: 1000%;
-  transition: .5s ease-out;
+  transition: 0.5s ease-out;
 }
 .hddul.active li {
   position: relative;
 }
 
-.hddul.active li:nth-of-type(1) {  
+.hddul.active li:nth-of-type(1) {
   translate: -200%;
 }
 .hddul.active li:nth-of-type(2) {
   translate: -100%;
-  transition-delay: .5s;
+  transition-delay: 0.5s;
 }
 
 .hddul.active li:nth-of-type(3) {
@@ -1089,7 +1099,7 @@ header a .hdd {
   width: 200px;
   aspect-ratio: 1;
   border-radius: 100%;
-  transition: scale .7s ease-out;
+  transition: scale 0.7s ease-out;
 }
 
 header a .hdd.active {
@@ -1097,7 +1107,6 @@ header a .hdd.active {
 }
 
 /***************** 햄버거 메뉴 동그랗게 나오기 *****************/
-
 
 /* 스티키박스 셋팅 */
 .left {
@@ -1125,21 +1134,18 @@ header a .hdd.active {
   font-size: 2.2rem;
 }
 
-
-
-
 /**************************************************************************************서브페이지 */
 .s_main_1 {
   margin: 10% auto;
   width: 90%;
   text-align: center;
-  color:#fff;
+  color: #fff;
 }
 .s_main_1 p {
   margin: 0;
   font-size: 5rem;
   color: #f00;
-  font-family: 'Yesteryear', Arial, Helvetica;
+  font-family: "Yesteryear", Arial, Helvetica;
   transform: rotate(356deg);
 }
 .s_main_1 h2 {
@@ -1151,24 +1157,23 @@ header a .hdd.active {
 .s_main_1 i {
   font-size: 3rem;
   font-style: normal;
-  font-family: 'Teko', Arial, Helvetica;
+  font-family: "Teko", Arial, Helvetica;
 }
 .s_main_1 span {
   font-size: 2.2rem;
 }
 .s_main_1 h3 {
   font-size: 4rem;
-  font-family: 'Graduate', Arial, Helvetica;
+  font-family: "Graduate", Arial, Helvetica;
 }
 .s_main_1 div {
   margin-top: 5%;
 }
 .s_main_1 div a {
-  font-family: 'Teko', Arial, Helvetica;
+  font-family: "Teko", Arial, Helvetica;
   font-size: 2.4rem;
   background-color: #f00;
   border-radius: 30px;
   color: #fff;
   padding: 1% 3%;
 }
-

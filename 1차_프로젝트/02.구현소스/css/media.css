@@ -3,521 +3,517 @@
 /* 1768, 1400, 1200, 1100, 1040, 740, 640  */
 
 @media screen and (max-width: 1768px) {
-    .footer .bgsvg path{
-        fill:rgb(16,16,16,.3);
-        /* background-color: rgb(16,16,16); */
-    }
-
+  .footer .bgsvg path {
+    fill: rgb(16, 16, 16, 0.3);
+    /* background-color: rgb(16,16,16); */
+  }
 }
 
 @media screen and (max-width: 1400px) {
-    header nav span {
-        height:3px;
-        overflow: hidden;
-    }
-    header nav span:nth-of-type(2) {
-        margin-top: 8px;
-        right:0;
-        width:22px;
-      }
-      
-      header nav span:nth-of-type(3) {
-        margin-top: 16px;
-        right:0;
-        width:16px;
-      }
+  header nav span {
+    height: 3px;
+    overflow: hidden;
+  }
+  header nav span:nth-of-type(2) {
+    margin-top: 8px;
+    right: 0;
+    width: 22px;
+  }
 
+  header nav span:nth-of-type(3) {
+    margin-top: 16px;
+    right: 0;
+    width: 16px;
+  }
 
-    .flow_1 ul li {
-        font-size: 20rem;
-    }
-    .main_2 span {
-        font-size: 9rem;
-    }
-    .main_3 .abtnDiv {
-        margin-top: 21.2%;
-        /* margin-left: 3%; */
-        transform: translateX(30%);
-    }
-    .main_3 .spoa_ab {
-        border-radius: 15px;
-    }
-/*     .main_3 .spoa a:nth-of-type(1) {
+  .flow_1 ul li {
+    font-size: 20rem;
+  }
+  .main_2 span {
+    font-size: 9rem;
+  }
+  .main_3 .abtnDiv {
+    margin-top: 21.2%;
+    /* margin-left: 3%; */
+    transform: translateX(30%);
+  }
+  .main_3 .spoa_ab {
+    border-radius: 15px;
+  }
+  /*     .main_3 .spoa a:nth-of-type(1) {
         transform: translateY(5%);
     } */
-    .main_3 .spoa {
-        transform: translateY(5%);
-        line-height: 5rem;
-        margin-top: 3%;
-    }
-    .main_3 .spoa a {
-        border-radius: 15px;
-        padding: 3% 9%;
-        top: -20%;
-    }
-    .spoa a:nth-of-type(2) {
-        top: -35%;
-    }
-    .spoa_2 {
-        /* margin-bottom:5%; */
-        display: block;
-        margin-bottom: 10%;
-    }
-    .main_4 h2 {
-        font-size: 20rem;
-    }
-    .att h2 {
-        font-size: 4rem;
-    }
-    .main_5 .flow_2 {
-        font-size: 12rem;
-    }
-    .delay h2 {
-        font-size: 9rem;
-    }
-    /****************************************************** main_5 a버튼 */
-    .li_01 .li_01a a {
-        border-radius: 15px;
-    }
-    .li_01a .heigl {
-        margin-left: 1%;
-    }
-    .li_04 a {
-        border-radius: 15px;
-    }
-    /****************************************************** main_5 a버튼 */
-    .main_6 .spimg {
-        /* 햄버거 위에 글 */
-        font-size: 9rem;
-    }
-    /* main_6 a버튼 */
-    .main_6 a:nth-of-type(1) {
-        border-radius: 15px;
-    }
-    .main_6 a:nth-of-type(2) {
-        border-radius: 15px;
-    }
-    /* main_6 a버튼 */
-    .flow_3 ul li {
-        font-size: 12rem;
-    }
-    .flow_3 ul {
-        translate: 0 -90%;
-    }
-    .social a {
-        border-radius: 15px;
-    }
-    .bgsvg {
-        display: none;
-    }
-    .footer {
-        width:90%;
-        margin: 0 auto;
-    }
-    .footer ul {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-    }
-    .footer .final {
-        /* text-align: center; */
-        justify-content: center;
-    }
-    
-    .meat,
-    .main_4 > h2,
-    .main_4 .hol,
-    .att,
-    .li_01,
-    .li_02,
-    .li_03,
-    .li_04,
-    .main_6 .bimg,
-    .sns {
-        transition: .3s ease-in-out;
-    }
-}
+  .main_3 .spoa {
+    transform: translateY(5%);
+    line-height: 5rem;
+    margin-top: 3%;
+  }
+  .main_3 .spoa a {
+    border-radius: 15px;
+    padding: 3% 9%;
+    top: -20%;
+  }
+  .spoa a:nth-of-type(2) {
+    top: -35%;
+  }
+  .spoa_2 {
+    /* margin-bottom:5%; */
+    display: block;
+    margin-bottom: 10%;
+  }
+  .main_4 h2 {
+    font-size: 20rem;
+  }
+  .att h2 {
+    font-size: 4rem;
+  }
+  .main_5 .flow_2 {
+    font-size: 12rem;
+  }
+  .delay h2 {
+    font-size: 9rem;
+  }
+  /****************************************************** main_5 a버튼 */
+  .li_01 .li_01a a {
+    border-radius: 15px;
+  }
+  .li_01a .heigl {
+    margin-left: 1%;
+  }
+  .li_04 a {
+    border-radius: 15px;
+  }
+  /****************************************************** main_5 a버튼 */
+  .main_6 .spimg {
+    /* 햄버거 위에 글 */
+    font-size: 9rem;
+  }
+  /* main_6 a버튼 */
+  .main_6 a:nth-of-type(1) {
+    border-radius: 15px;
+  }
+  .main_6 a:nth-of-type(2) {
+    border-radius: 15px;
+  }
+  /* main_6 a버튼 */
+  .flow_3 ul li {
+    font-size: 12rem;
+  }
+  .flow_3 ul {
+    translate: 0 -90%;
+  }
+  .social a {
+    border-radius: 15px;
+  }
+  .bgsvg {
+    display: none;
+  }
+  .footer {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .footer .final {
+    /* text-align: center; */
+    justify-content: center;
+  }
 
+  .meat,
+  .main_4 > h2,
+  .main_4 .hol,
+  .att,
+  .li_01,
+  .li_02,
+  .li_03,
+  .li_04,
+  .main_6 .bimg,
+  .sns {
+    transition: 0.3s ease-in-out;
+  }
+}
 
 @media screen and (max-width: 1200px) {
-    header img { 
-        width: 80xp;
-    }
-    .flow_1 ul li {
-        font-size: 20rem;
-    }
-    .main_2 span {
-        font-size: 9rem;
-    }
-    .main_4 h2 {
-        font-size: 20rem;
-    }
-    .att h2 {
-        font-size: 4rem;
-    }
-    .main_5 .flow_2 {
-        font-size: 12rem;
-    }
-    .delay h2 {
-        font-size: 9rem;
-    }
-    /****************************************************** main_5 a버튼 */
-    .li_01 .li_01a a {
-        border-radius: 15px;
-    }
-    .li_01a .heigl {
-        margin-left: 1%;
-    }
-    .li_04 a {
-        border-radius: 15px;
-    }
-    /****************************************************** main_5 a버튼 */
-    .main_6 .spimg {
-        /* 햄버거 위에 글 */
-        font-size: 9rem;
-    }
-    /* main_6 a버튼 */
-    .main_6 a:nth-of-type(1) {
-        border-radius: 15px;
-    }
-    .main_6 a:nth-of-type(2) {
-        border-radius: 15px;
-    }
-    /* main_6 a버튼 */
-    .flow_3 ul li {
-        font-size: 12rem;
-    }
-    .flow_3 ul {
-        translate: 0 -90%;
-    }
-    .social a {
-        border-radius: 15px;
-    }
-    .bgsvg {
-        display: none;
-    }
-    .footer {
-        width:90%;
-        margin: 0 auto;
-    }
-    .footer ul {
-        display: flex;
-        justify-content: space-around;
-    }
+  header img {
+    width: 80xp;
+  }
+  .flow_1 ul li {
+    font-size: 20rem;
+  }
+  .main_2 span {
+    font-size: 9rem;
+  }
+  .main_4 h2 {
+    font-size: 20rem;
+  }
+  .att h2 {
+    font-size: 4rem;
+  }
+  .main_5 .flow_2 {
+    font-size: 12rem;
+  }
+  .delay h2 {
+    font-size: 9rem;
+  }
+  /****************************************************** main_5 a버튼 */
+  .li_01 .li_01a a {
+    border-radius: 15px;
+  }
+  .li_01a .heigl {
+    margin-left: 1%;
+  }
+  .li_04 a {
+    border-radius: 15px;
+  }
+  /****************************************************** main_5 a버튼 */
+  .main_6 .spimg {
+    /* 햄버거 위에 글 */
+    font-size: 9rem;
+  }
+  /* main_6 a버튼 */
+  .main_6 a:nth-of-type(1) {
+    border-radius: 15px;
+  }
+  .main_6 a:nth-of-type(2) {
+    border-radius: 15px;
+  }
+  /* main_6 a버튼 */
+  .flow_3 ul li {
+    font-size: 12rem;
+  }
+  .flow_3 ul {
+    translate: 0 -90%;
+  }
+  .social a {
+    border-radius: 15px;
+  }
+  .bgsvg {
+    display: none;
+  }
+  .footer {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer ul {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
-
 @media screen and (max-width: 1100px) {
-    section ul li img {
-        height: 90%;
-    }
-    .spoa {
-        line-height: 4rem;
-    }
-    .spoa div a:nth-of-type(2) {
-        border: none;
-    }
-    .main_3 .spoa a {
-        top: -30%;
-    }
-    .main_3 .abtnDiv {
-        transform: translate(-10%, 10px);
-    }
+  section ul li img {
+    height: 90%;
+  }
+  .spoa {
+    line-height: 4rem;
+  }
+  .spoa div a:nth-of-type(2) {
+    border: none;
+  }
+  .main_3 .spoa a {
+    top: -30%;
+  }
+  .main_3 .abtnDiv {
+    transform: translate(-10%, 10px);
+  }
 }
 
 @media screen and (max-width: 1040px) {
-    header img {
-        width: 120px;
-    }
-    .flow_1 ul li {
-        font-size: 18rem;
-    }
-    .main_2 p {
-        font-size: 3rem;
-    }
-    .main_2 span {
-        font-size: 5.6rem;
-    }
-    .main_3 .abtnDiv {
-        translate: 185% -565%;
-    }
-    .meat img:nth-of-type(1) {
-        width: 10%;
-    }
-    .meat img:nth-of-type(2) {
-        width: 5%;
-    }
-    .meat img:nth-of-type(3) {
-        width: 10%;
-    }
-    .slide li {
-        padding-top: 5%;
-        flex-direction: column;
-    }
-    .slide li img {
-        width: 100%;
-    }
-    .slide li br{
-        display: inline-block;
-        content: " ";
-        padding: 0 2px;
-    }
-    .slide li br:nth-of-type(3) {
-        display: block;
-    }
-    .spoa {
-        width: 100%;
-        font-size: 3.4rem;
-    }
-    .main_3 .spoa {
-        transform: translateY(-1%);
-    }
-    .spoa_2,
-    .main_3 .spoa > div {
-        transform: translateY(-35%);
-    }
+  header img {
+    width: 120px;
+  }
+  .flow_1 ul li {
+    font-size: 18rem;
+  }
+  .main_2 p {
+    font-size: 3rem;
+  }
+  .main_2 span {
+    font-size: 5.6rem;
+  }
+  .main_3 .abtnDiv {
+    translate: 185% -565%;
+  }
+  .meat img:nth-of-type(1) {
+    width: 10%;
+  }
+  .meat img:nth-of-type(2) {
+    width: 5%;
+  }
+  .meat img:nth-of-type(3) {
+    width: 10%;
+  }
+  .slide li {
+    padding-top: 5%;
+    flex-direction: column;
+  }
+  .slide li img {
+    width: 100%;
+  }
+  .slide li br {
+    display: inline-block;
+    content: " ";
+    padding: 0 2px;
+  }
+  .slide li br:nth-of-type(3) {
+    display: block;
+  }
+  .spoa {
+    width: 100%;
+    font-size: 3.4rem;
+  }
+  .main_3 .spoa {
+    transform: translateY(-1%);
+  }
+  .spoa_2,
+  .main_3 .spoa > div {
+    transform: translateY(-35%);
+  }
 
-    .main_3 .spoa > div {
-        display: flex;
-        gap: 20px; /* 값은 수정하시면돼용*/
-        transform: translateY(0);
-    }
-    .main_3 .spoa a {
-        /* padding: 1% 1%; */
-        padding: 0% 2%;
-    }
-    .spoa_2 {
-        font-size: 1.7rem;
-                /* margin-bottom:5%; */
-                display: inline;
-                margin-bottom: 0%;
-    }
+  .main_3 .spoa > div {
+    display: flex;
+    gap: 20px; /* 값은 수정하시면돼용*/
+    transform: translateY(0);
+  }
+  .main_3 .spoa a {
+    /* padding: 1% 1%; */
+    padding: 0% 2%;
+  }
+  .spoa_2 {
+    font-size: 1.7rem;
+    /* margin-bottom:5%; */
+    display: inline;
+    margin-bottom: 0%;
+  }
 
-    .spoa_ab {
-        position: relative;
-    }
+  .spoa_ab {
+    position: relative;
+  }
 
-
-
-    .main_3 p {
-        font-size: 3rem;
-    }
-    .main_3 .spoa_2 {
-        /* line-height: -1; */
-        line-height: 0rem;
-    }
-    .main_3 .frisch {
-        font-size: 5.6rem;
-    }
-    .main_4 h2 {
-        font-size: 9rem;
-    }
-    .main_4 .hol p {
-        font-size: 2.4rem;
-    }
-    .main_4 .hol figure {
-        font-size: 1.7rem;
-    }
-    .att p {
-        font-size: 3rem;
-    }
-    .att h2 {
-        font-size: 2.2rem;
-    }
-    .att span {
-        font-size: 1.7rem;
-    }
-    .att a {
-        border-radius: 15px;
-    }
-    .main_5 .flow_2 {
-        font-size: 12rem;
-    }
-    .under_5 p {
-        font-size: 3rem;
-    }
-    .delay h2 {
-        font-size: 5.6rem;
-    }
-    .delay_div {
-        font-size: 1.7rem;
-    }
-    .li_04 {
-        font-size: 2.2rem;
-    }
-    /****************************************************** main_5 a버튼 */
-    .li_01 .li_01a a {
-        border-radius: 15px;
-    }
-    .li_01a .heigl {
-        margin-left: 1%;
-    }
-    .li_04 a {
-        border-radius: 15px;
-    }
-    /****************************************************** main_5 a버튼 */
-    .main_6 .pimg {
-        font-size: 3rem;
-    }
-    .main_6 .spimg {
-        /* 햄버거 위에 글 */
-        font-size: 5.6rem;
-    }
-    /* main_6 a버튼 */
-    .main_6 a:nth-of-type(1) {
-        border-radius: 15px;
-    }
-    .main_6 a:nth-of-type(2) {
-        border-radius: 15px;
-    }
-    .main_6 a:nth-of-type(1) {
-        margin-right: 1%;
-    }
-    /* main_6 a버튼 */
-    .flow_3 ul li {
-        font-size: 12rem;
-    }
-    .flow_3 ul {
-        translate: 0 -90%;
-    }
-    .main_7 .sns_pi {
-        display: flex;
-        flex-wrap: wrap;
-        gap:5%;
-    }
-    .main_7 .sns_pi li {
-        width:45%;
-        margin-bottom: 3%;
-    }
-    .main_7 .sns_pi img {
-        aspect-ratio: 3/4;
-    }
-    .social a {
-        border-radius: 15px;
-    }
-    .bgsvg {
-        display: none;
-    }
-    .footer {
-        width:90%;
-        margin: 0 auto;
-    }
-    .footer ul li h2 {
-        font-size: 3rem;
-    }
-    .footer ul {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-    }
-    .footer ul li {
-        box-sizing: border-box;
-        padding-left: 3%;
-    }
-    .footer ul li span {
-        font-size: 1.6rem;
-    }
-    .footer ul li p {
-        font-size: 2rem;
-    }
-    .footer .final {
-        /* text-align: center; */
-        justify-content: center;
-    }
-    .footer ul li {
-        width: 50%;
-    }
-    .footer ul li:last-child {
-        width: 50%;
-    }
-    .footer .final {
-        display: block;
-    }
+  .main_3 p {
+    font-size: 3rem;
+  }
+  .main_3 .spoa_2 {
+    /* line-height: -1; */
+    line-height: 0rem;
+  }
+  .main_3 .frisch {
+    font-size: 5.6rem;
+  }
+  .main_4 h2 {
+    font-size: 9rem;
+  }
+  .main_4 .hol p {
+    font-size: 2.4rem;
+  }
+  .main_4 .hol figure {
+    font-size: 1.7rem;
+  }
+  .att p {
+    font-size: 3rem;
+  }
+  .att h2 {
+    font-size: 2.2rem;
+  }
+  .att span {
+    font-size: 1.7rem;
+  }
+  .att a {
+    border-radius: 15px;
+  }
+  .main_5 .flow_2 {
+    font-size: 12rem;
+  }
+  .under_5 p {
+    font-size: 3rem;
+  }
+  .delay h2 {
+    font-size: 5.6rem;
+  }
+  .delay_div {
+    font-size: 1.7rem;
+  }
+  .li_04 {
+    font-size: 2.2rem;
+  }
+  /****************************************************** main_5 a버튼 */
+  .li_01 .li_01a a {
+    border-radius: 15px;
+  }
+  .li_01a .heigl {
+    margin-left: 1%;
+  }
+  .li_04 a {
+    border-radius: 15px;
+  }
+  /****************************************************** main_5 a버튼 */
+  .main_6 .pimg {
+    font-size: 3rem;
+  }
+  .main_6 .spimg {
+    /* 햄버거 위에 글 */
+    font-size: 5.6rem;
+  }
+  /* main_6 a버튼 */
+  .main_6 a:nth-of-type(1) {
+    border-radius: 15px;
+  }
+  .main_6 a:nth-of-type(2) {
+    border-radius: 15px;
+  }
+  .main_6 a:nth-of-type(1) {
+    margin-right: 1%;
+  }
+  /* main_6 a버튼 */
+  .flow_3 ul li {
+    font-size: 12rem;
+  }
+  .flow_3 ul {
+    translate: 0 -90%;
+  }
+  .main_7 .sns_pi {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+  }
+  .main_7 .sns_pi li {
+    width: 45%;
+    margin-bottom: 3%;
+  }
+  .main_7 .sns_pi img {
+    aspect-ratio: 3/4;
+  }
+  .social a {
+    border-radius: 15px;
+  }
+  .bgsvg {
+    display: none;
+  }
+  .footer {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer ul li h2 {
+    font-size: 3rem;
+  }
+  .footer ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .footer ul li {
+    box-sizing: border-box;
+    padding-left: 3%;
+  }
+  .footer ul li span {
+    font-size: 1.6rem;
+  }
+  .footer ul li p {
+    font-size: 2rem;
+  }
+  .footer .final {
+    /* text-align: center; */
+    justify-content: center;
+  }
+  .footer ul li {
+    width: 50%;
+  }
+  .footer ul li:last-child {
+    width: 50%;
+  }
+  .footer .final {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 740px) {
-    header img {
-        width: 80px;
-    }
-    .flow_1 ul {
-        background-color: black;
-        bottom:-1%;
-    }
-    .flow_1 ul li {
-        font-size: 12rem;
-    }
-    .left {
-        position: relative;
-        height: auto;
-    }
-    .center {
-        position: relative;
-        height: auto;
-    }
-    .right {
-        position: relative;
-        height: auto;
-    }
-    .hol {
-        flex-direction: column;
-        /* height: 100vh; */
-    }
-    .slide li br:nth-of-type(3) {
-        display: block;
-    }
-    .under_5 ul li {
-        width: 100%;
-    }
-    .li_01 .li_01a {
-        margin-bottom: 5%;
-    }
-    .footer ul li {
-        width: 50%;
-    }
-    .footer ul li:last-child {
-        width: 50%;
-    }
-    .footer .final {
-        display: block;
-    }
+  body {
+    overflow-x: hidden;
+  }
+  header img {
+    width: 80px;
+  }
+  .flow_1 ul {
+    background-color: black;
+    bottom: -1%;
+  }
+  .flow_1 ul li {
+    font-size: 12rem;
+  }
+  .left {
+    position: relative;
+    height: auto;
+  }
+  .center {
+    position: relative;
+    height: auto;
+  }
+  .right {
+    position: relative;
+    height: auto;
+  }
+  .hol {
+    flex-direction: column;
+    /* height: 100vh; */
+  }
+  .slide li br:nth-of-type(3) {
+    display: block;
+  }
+  .under_5 ul li {
+    width: 100%;
+  }
+  .li_01 .li_01a {
+    margin-bottom: 5%;
+  }
+  .footer ul li {
+    width: 50%;
+  }
+  .footer ul li:last-child {
+    width: 50%;
+  }
+  .footer .final {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 640px) {
-    .main_6 .bimg div {
-
-    }
-    .main_6 a:nth-of-type(1) {
-        margin-bottom: 10%;
-    }
-    .main_7 .sns_pi {
-        flex-direction: column;
-    }
-    .main_7 .sns_pi li {
-        width: 100%;
-    }
-    .main_7 .sns_pi li img {
-        height: 270px;
-    }
-    .sns_pi li {
-        aspect-ratio: 3 / 1;
-    }
-    .footer ul li:nth-of-type(2) div {
-        justify-content: center;
-    }
-    .footer ul {
-        flex-direction: column;
-        text-align: center;
-    }
-    .footer ul li {
-        width: 100%;
-    }
-    .footer .final {
-        justify-content: center;
-    }
-    .footer ul li:last-child {
-        width: 100%;
-    }
-    .footer ul li div {
-        justify-content: center;
-    }
+  .main_6 .bimg div {
+  }
+  .main_6 a:nth-of-type(1) {
+    margin-bottom: 10%;
+  }
+  .main_7 .sns_pi {
+    flex-direction: column;
+  }
+  .main_7 .sns_pi li {
+    width: 100%;
+  }
+  .main_7 .sns_pi li img {
+    height: 270px;
+  }
+  .sns_pi li {
+    aspect-ratio: 3 / 1;
+  }
+  .footer ul li:nth-of-type(2) div {
+    justify-content: center;
+  }
+  .footer ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer ul li {
+    width: 100%;
+  }
+  .footer .final {
+    justify-content: center;
+  }
+  .footer ul li:last-child {
+    width: 100%;
+  }
+  .footer ul li div {
+    justify-content: center;
+  }
 }

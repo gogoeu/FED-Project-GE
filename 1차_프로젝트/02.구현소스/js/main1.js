@@ -4,6 +4,7 @@
 import myFn from "./my_function.js";
 
 const slide = myFn.qs(".slide");
+const slideList = myFn.qsaEl(slide, "li");
 // 순번변수
 const section = myFn.qs(".section");
 
@@ -47,10 +48,13 @@ function seqnum() {
   // console.log(seqNum);
   slide.style.translate = seqNum * -100 + "%";
   slide.style.transition = "1s ease-in-out";
+
+  slideList.forEach((el, idx) => {
+    if (idx === seqNum) el.classList.add("on");
+    else el.classList.remove("on");
+  }); /// forEach ///
+  // 클래스 해당순번의 li에 넣어서 버튼 나타나기/사라지기 적용함
 }
-
-
-
 
 // 1. 대상선정 :
 // (1) 이벤트 대상 : window
@@ -60,25 +64,21 @@ const scrollAct = myFn.qsa(".scroll");
 myFn.addEvt(window, "scroll", showEl);
 
 // 기준값 만들기 : 화면 높이값을 사용(화면의 2/3)
-const CRITERIA = ( window.innerHeight ) ;
+const CRITERIA = window.innerHeight;
 // console.log("기준값:", CRITERIA);
-
 
 // 3. 함수만들기 /////////////
 // (1) 요소 등장 함수 /////////
 function showEl() {
-    // (1) 함수호출확인
-    // console.log('나야나!',window.scrollY);
-  
-    scrollAct.forEach((el) => {
-      // 각 등장요소의 바운딩 top값
-      let bcrVal = myFn.getBCR(el);
-      console.log(bcrVal, el.getBoundingClientRect());
-  
-      if (bcrVal < CRITERIA) el.classList.add("on");
-      else el.classList.remove("on");
-    }); ///// forEach /////
-  } /////// showEl함수 ////////////////
+  // (1) 함수호출확인
+  // console.log('나야나!',window.scrollY);
 
+  scrollAct.forEach((el) => {
+    // 각 등장요소의 바운딩 top값
+    let bcrVal = myFn.getBCR(el);
+    console.log(bcrVal, el.getBoundingClientRect());
 
-  
+    if (bcrVal < CRITERIA) el.classList.add("on");
+    else el.classList.remove("on");
+  }); ///// forEach /////
+} /////// showEl함수 ////////////////
