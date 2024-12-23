@@ -520,6 +520,8 @@ figcaption {
   text-transform: uppercase;
   font-weight: bold;
   font-family: "Teko", Arial, Helvetica;
+
+  overflow-x: hidden;
 }
 
 .flow_2 ul {
