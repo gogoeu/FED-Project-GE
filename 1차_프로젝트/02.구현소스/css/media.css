@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* 1768, 1400, 1200, 1100, 1040  */
+/* 1768, 1400, 1200, 1100, 1040, 740, 640  */
 
 @media screen and (max-width: 1768px) {
     .footer .bgsvg path{
@@ -140,6 +140,9 @@
 
 
 @media screen and (max-width: 1200px) {
+    header img { 
+        width: 80xp;
+    }
     .flow_1 ul li {
         font-size: 20rem;
     }
@@ -224,7 +227,7 @@
 
 @media screen and (max-width: 1040px) {
     header img {
-        width: 80px;
+        width: 120px;
     }
     .flow_1 ul li {
         font-size: 18rem;
@@ -434,7 +437,7 @@
 
 @media screen and (max-width: 740px) {
     header img {
-        width: 120px;
+        width: 80px;
     }
     .flow_1 ul {
         background-color: black;
