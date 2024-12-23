@@ -29,6 +29,7 @@
     .main_3 .spoa a {
         border-radius: 15px;
         padding: 3% 9%;
+        top: -20%;
     }
     .main_4 h2 {
         font-size: 20rem;
@@ -105,6 +106,23 @@
     }
 }
 
+@media screen and (max-width: 1100px) {
+    section ul li img {
+        height: 90%;
+    }
+    .spoa {
+        line-height: 4rem;
+    }
+    .spoa div a:nth-of-type(2) {
+        border: none;
+    }
+    .main_3 .spoa a {
+        top: -30%;
+    }
+    .main_3 .abtnDiv {
+        transform: translate(-10%, 10px);
+    }
+}
 
 @media screen and (max-width: 1200px) {
     .flow_1 ul li {
@@ -184,6 +202,7 @@
     }
     .main_3 .abtnDiv {
         translate: 270% -210%;
+        translate: 240% -635%;
     }
     .meat img:nth-of-type(1) {
         width: 10%;
