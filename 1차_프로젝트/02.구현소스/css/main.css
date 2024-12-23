@@ -1056,7 +1056,7 @@ figcaption {
   left: 110%;
   top: 45vh;
   transform: translateY(-50%);
-  font-size: 5em;
+  font-size: 10rem;
   transition: 1s;
   font-weight: bold;
 }
@@ -1074,15 +1074,15 @@ figcaption {
 }
 
 .hddul.active li:nth-of-type(1) {
-  translate: -200%;
+  translate: -100%;
 }
 .hddul.active li:nth-of-type(2) {
-  translate: -100%;
+  translate: -50%;
   transition-delay: 0.5s;
 }
 
 .hddul.active li:nth-of-type(3) {
-  translate: 0%;
+  translate: 10%;
   transition-delay: 1s;
 }
 

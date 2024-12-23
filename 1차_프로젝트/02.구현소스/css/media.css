@@ -517,3 +517,49 @@
     justify-content: center;
   }
 }
+
+
+
+
+
+
+@media screen and (max-width: 375px) {
+    .nav {
+        transform: translateX(-70%);
+    }
+    .main_2 p {
+        transform: rotate(-10deg) translateY(45%);
+    }
+    .knife span {
+        width: 40%;
+    }
+    .meat.on {
+        scale: 3;
+        margin-top: 13%;
+    }
+    .slide {
+        margin-top: 52%;
+    }
+    .main_3 .abtnDiv {
+        margin-top: 52%;
+        translate: 110% -215%;
+    }
+    .unsere {
+        width: 43%;
+        padding:7%;
+        margin-bottom:4%;
+    }
+    .heigl {
+        width: 52%;
+    }
+    .li_01 .li_01a {
+        flex-direction: column;
+        white-space: nowrap;
+    }
+    .li_01 .li_01a a {
+        font-size: 2.2rem;
+    }
+    .under_5 .li_04 p {
+        font-size: 2.2rem;
+    }
+}

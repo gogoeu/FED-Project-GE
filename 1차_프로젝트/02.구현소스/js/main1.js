@@ -4,6 +4,8 @@
 import myFn from "./my_function.js";
 
 const slide = myFn.qs(".slide");
+
+//선생님이 페이드 잡아주신거
 const slideList = myFn.qsaEl(slide, "li");
 // 순번변수
 const section = myFn.qs(".section");
@@ -34,14 +36,14 @@ myFn.qs(".ab1").onclick = () => {
 };
 
 // 자동 넘김
-// var sec = document.querySelector('section');
-// var secLen = sec.querySelectorAll('img').length;
-// setInterval(interval,2000);
-// function interval() {
-//     seqNum++;
-//     if (seqNum == secLen) seqNum = 0;
-//     seqnum()
-// }
+var sec = document.querySelector('section');
+var secLen = sec.querySelectorAll('img').length;
+setInterval(interval,2000);
+function interval() {
+    seqNum++;
+    if (seqNum == secLen) seqNum = 0;
+    seqnum()
+}
 
 // translate 함수
 function seqnum() {
@@ -49,6 +51,8 @@ function seqnum() {
   slide.style.translate = seqNum * -100 + "%";
   slide.style.transition = "1s ease-in-out";
 
+
+  //선생님이 페이드 잡아주신거
   slideList.forEach((el, idx) => {
     if (idx === seqNum) el.classList.add("on");
     else el.classList.remove("on");
