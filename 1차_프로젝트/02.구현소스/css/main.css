@@ -638,6 +638,9 @@ figcaption {
   font-family: "Teko", Arial, Helvetica;
   padding: 1% 2%;
 }
+.under_5 .li_04 div a {
+  text-transform: uppercase;
+}
 
 .li_01 {
   transform: translateX(-100%);
