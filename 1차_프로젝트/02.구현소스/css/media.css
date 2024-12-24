@@ -480,10 +480,14 @@
 }
 
 @media screen and (max-width: 640px) {
-  .main_6 .bimg div {
+
+  .main_6 a {
+    white-space: nowrap;
   }
   .main_6 a:nth-of-type(1) {
-    margin-bottom: 10%;
+    margin-bottom: 0%;
+  }
+  .main_6 .bimg div {
   }
   .main_7 .sns_pi {
     flex-direction: column;
