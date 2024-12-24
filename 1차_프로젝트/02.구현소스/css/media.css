@@ -594,4 +594,7 @@
     .footer ul {
       text-align: left;
     }
+    .main_6 a:nth-of-type(1) {
+      margin-bottom: 10%;
+  }
 }
