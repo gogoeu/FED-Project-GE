@@ -7,6 +7,12 @@ html {
   /* 스티키 영향없이 가로스크롤 없앰! */
   overflow-x: hidden;
 }
+.header_media {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  transform: translateX(-100%);
+}
 
 /********************************* SLIDE *****/
 .spoa_ab {
