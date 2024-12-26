@@ -1249,3 +1249,9 @@ header a .hdd.active {
 .s_main_3 span {
   font-size: 1.76rem;
 }
+.s_main_3 h1 {
+  font-size: 28rem;
+}
+.s_main_3 ul li {
+  width: 50%;
+}
