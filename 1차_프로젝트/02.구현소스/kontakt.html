@@ -14,6 +14,8 @@
   crossorigin="anonymous"></script>
   </head>
 
+  <!-- required 넣었는데 안됨, li 크기 -->
+
   <body>
     <header>
       <img src="./images/logo.svg" alt="logo" />
@@ -51,60 +53,173 @@
     <div class="s_main_2">
       <div class="form_1">
         <p>Anrede *</p>
+        <div>
+          <!-- <label>Radio Type</label> -->
+          <input type="radio" name="gender" value="f" checked>Frau
+          <!-- chcked 미리 체크해두기 -->
+          <input type="radio" name="gender" value="m">Herr
+          <!-- 값을 가져가는게 아니고 체크하는 거니까 value 값을 직접 넣어줌 -->
+          <input type="radio" name="gender" value="d">Divers
+          <!-- 여러 가지 잡다한 -->
+        </div>
         <ul>
           <li>
-            <!-- <label>Radio Type</label> -->
-            Frau<input type="radio" name="gender" value="f" checked>
-            <!-- chcked 미리 체크해두기 -->
-            Herr<input type="radio" name="gender" value="m">
-            <!-- 값을 가져가는게 아니고 체크하는 거니까 value 값을 직접 넣어줌 -->
-            Divers<input type="radio" name="gender" value="d">
-            <!-- 여러 가지 잡다한 -->
+          <label for="name">Vorname *</label>
+          <input type="text" name="name" id="name" required>
+          <!-- name 꼮 써야 함. 입력한 값을 지니고 있음 -->
         </li>
+        <li>
+            <label for="name">Nachname *</label>
+            <input type="text" name="name" id="name" required>
+        </li>
+
+        <li>
+          <label>E-Mail</label>
+          <input type="email" name="email" required>
+        </li>
+        <li>
+            <label>Telefon</label>
+            <input type="tel" name="tel" maxlength="11">
+        </li>
+
+        <li>
+          <label>Nachricht</label>
+          <textarea cols="50" rows="10">약관동의 및 개인정보동의</textarea>
+        </li>
+
+        <li>
+          <input type="submit" value="Absenden">
+         </li>
+
         </ul>
       </div>
     </div>
 
-    <style>
-      .s_main_2 {
-        width: 90%;
-        margin: 0 auto;
-      }
-    </style>
+
+    <div class="s_main_3">
+      <span>Durch die Übermittlung des Formulars werden Ihre bereitgestellten Daten zur Behandlung der Anfrage durch Metzgerei Heigl e.K. Karl Heigl, Hauptstraße 17, D-87734 Benningen, verarbeitet. Ihre Daten werden ausschließlich für diesen beabsichtigten Zweck verarbeitet.<br><br>
+
+        Weitere Informationen zur Verarbeitung Ihrer Daten innerhalb unserer Website finden Sie in unseren Datenschutzhinweise.</span>
+    
+      <h1>meat us</h1>
+      <p>Routenplaner</p>
+
+      <ul>
+        <li>
+          <label>Land</label>
+          <select name="map">
+              <option selected>Deutschland</option>
+              <option>Afghanistan</option>
+              <option>Ägypten</option>
+              <option>Albanien</option>
+              <option>Algerien</option>
+              <option>Amerikanisch-Samoa</option>
+              <option>Andorra</option>
+              <option>Angola</option>
+              <option>Anguilla</option>
+              <option>Antarktis</option>
+              <option>Antigua und Barbuda</option>
+              <option>Äquatorialguinea</option>
+              <option>Argentinien</option>
+              <option>Armenien</option>
+              <option>Aruba</option>
+              <option>Äthiopien</option>
+              <option>Australien</option>
+              <option>Azerbaijan</option>
+              <option>Bahamas</option>
+              <option>Bahrain</option>
+              <option>Bangladesh</option>
+              <option>Barbados</option>
+              <option>Belgien</option>
+              <option>Belize</option>
+              <option>Benin</option>
+              <option>Bermudas</option>
+              <option>Bhutan</option>
+              <option>Bolivien</option>
+              <option>Bosnien-Herzegovina</option>
+              <option>Botswana</option>
+              <option>Bouvet Island</option>
+              <option>Brasilien</option>
+              <option>British Indian Ocean Territory</option>
+              <option>Brunei Darussalam</option>
+              <option>Bulgarien</option>
+              <option>Burkina Faso</option>
+              <option>Burundi</option>
+              <option>Canada</option>
+              <option>Chile</option>
+              <option>China</option>
+              <option>Christmas Island</option>
+              <option>Cocos (Keeling) Islands</option>
+              <option>Cook Islands</option>
+              <option>Costa Rica</option>
+              <option>Dänemark</option>
+              <option>Demokratische Republik Kongo</option>
+              <option>Deutschland</option>
+              <option>Djibouti</option>
+              <option>Dominica</option>
+              <option>Dominikanische Republik</option>
+              <option>Ecuador</option>
+              <option>El Salvador</option>
+              <option>Elfenbeinküste (Cote D'Ivoire)</option>
+              <option>Eritrea</option>
+              <option>Estland</option>
+              <option>Falkland-Inseln (Malvinas)</option>
+              <option>Faröer-Inseln</option>
+              <option>Fiji</option>
+              <option>Finnland</option>
+          </select>
+        </li>
+      </ul>
+
+    </div>
 
 
 
-      <div class="main_8">
-        <div>
-          <div class="footer">
-            <ul>
-              <li>
-                <h2>Metzgerei Heigl</h2>
-                <span>Hauptstraße 17<br />D-87734 Benningen</span>
-                <p>T +49 8331 9412155</p>
-                <div class="a_sns">
-                  <a href="#">Kontakt // Email</a>
-                  <img src="./images/insta.png" alt="insta" />
-                  <img src="./images/facebook.png" alt="facebook" />
-                </div>
-              </li>
-              <li>
-                <h2>Meat 'n Greet</h2>
-                <div>
-                  <span>mo. di. mi. do. fr. sa.</span>
-                  <span class="sp_02"
-                    >nur online 07:30 - 13:00 Uhr 07:30 - 13:00 Uhr 14:00 -
-                    18:00 Uhr 07:30 - 12:00 Uhr
-                  </span>
-                </div>
-              </li>
-              <li>
-                <h2>Links</h2>
-                <span
-                  >+Online Meat Shop +Catering +Team Heigl +Unsere Werte</span
-                >
-              </li>
 
+
+
+    <div class="main_8">
+      <div>
+        <div class="footer">
+          <ul>
+            <li>
+              <h2>Metzgerei Heigl</h2>
+              <span>Hauptstraße 17<br />D-87734 Benningen</span>
+              <p>T +49 8331 9412155</p>
+              <div class="a_sns">
+                <a href="#">Kontakt // Email</a>
+                <img src="./images/insta.png" alt="insta" />
+                <img src="./images/facebook.png" alt="facebook" />
+              </div>
+            </li>
+            <li>
+              <h2>Meat 'n Greet</h2>
+              <div>
+                <span>mo. di.
+                  mi.
+                  do. fr.
+
+                  sa.
+                </span>
+                <span class="sp_02"
+                >nur online 
+                07:30 - 13:00 Uhr 
+                07:30 - 13:00 Uhr 
+                14:00 - 18:00 Uhr 
+                07:30 - 12:00 Uhr
+                </span>
+              </div>
+            </li>
+            <li>
+              <h2>Links</h2>
+              <span
+                >+Online Meat Shop 
+                +Catering 
+                +Team Heigl 
+                +Unsere Werte</span
+              >
+            </li>
+            <li>
               <div class="final">
                 Impressum | Datenschutz
                 <svg
@@ -240,37 +355,38 @@
                         fill="#3A3938"
                       ></path>
                     </g>
-                  </g></svg
-                >© 2024
+                  </g></svg>
+                  © 2024
               </div>
-            </ul>
-            <div class="bgsvg">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="759.876"
-                height="798.949"
-                viewBox="0 0 759.876 798.949"
-              >
-                <g transform="translate(-1142.033 -7928.574)">
-                  <path
-                    d="M-88.75-318h70.5V0h-70.5V-131h-64V0h-70.5V-318h70.5v134.5h64ZM171.75,0l-11-57.5H88.25L77.25,0H6.75l72-318h91l74,318ZM98.25-109.5h52l-26-134.5Zm-119,287h-72v-50q0-12.5-13-12.5h-20.5q-13.5,0-13.5,12.5v195q0,7,3,9.75t10.5,2.75h20.5q7,0,10-2.75t3-9.75V274h72v55q0,55-63.5,55h-64q-63,0-63-55V121q0-55,63-55h64q63.5,0,63.5,55ZM227.25,66l-64,157,64,161h-77L88.75,223l61.5-157Zm-211,318V66h71V384Z"
-                    transform="matrix(0.966, -0.259, 0.259, 0.966, 1567.077, 8298.825)"
-                    fill="#222"
-                  ></path>
-                  <path
-                    d="M-191.76-101.76h22.72L-188.72,0h-27.36l-11.36-66.56L-238.8,0h-27.36l-19.68-101.76h23.68l9.6,76,13.44-76h23.2l13.44,76Zm74.56,0h22.56V0H-117.2V-41.92h-20.48V0h-22.56V-101.76h22.56v43.04h20.48ZM-33.84,0l-3.52-18.4h-23.2L-64.08,0H-86.64L-63.6-101.76h29.12L-10.8,0ZM-57.36-35.04h16.64l-8.32-43.04ZM50.8-101.76v16.8H32.08V0H9.2V-84.96H-9.36v-16.8Zm90.4,0v16.8H122.48V0H99.6V-84.96H81.04v-16.8Zm51.04,0H214.8V0H192.24V-41.92H171.76V0H149.2V-101.76h22.56v43.04h20.48ZM252.08-16.8h32.64V0H229.2V-101.76h54.24v16.8H252.08v24.8H278.8v16.8H252.08Z"
-                    transform="matrix(-0.259, -0.966, 0.966, -0.259, 1314.016, 8340.18)"
-                    fill="#222"
-                  ></path>
-                </g>
-              </svg>
-            </div>
-            <!-- svg -->
+            </li>
+          </ul>
+          <div class="bgsvg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="759.876"
+              height="798.949"
+              viewBox="0 0 759.876 798.949"
+            >
+              <g transform="translate(-1142.033 -7928.574)">
+                <path
+                  d="M-88.75-318h70.5V0h-70.5V-131h-64V0h-70.5V-318h70.5v134.5h64ZM171.75,0l-11-57.5H88.25L77.25,0H6.75l72-318h91l74,318ZM98.25-109.5h52l-26-134.5Zm-119,287h-72v-50q0-12.5-13-12.5h-20.5q-13.5,0-13.5,12.5v195q0,7,3,9.75t10.5,2.75h20.5q7,0,10-2.75t3-9.75V274h72v55q0,55-63.5,55h-64q-63,0-63-55V121q0-55,63-55h64q63.5,0,63.5,55ZM227.25,66l-64,157,64,161h-77L88.75,223l61.5-157Zm-211,318V66h71V384Z"
+                  transform="matrix(0.966, -0.259, 0.259, 0.966, 1567.077, 8298.825)"
+                  fill="#222"
+                ></path>
+                <path
+                  d="M-191.76-101.76h22.72L-188.72,0h-27.36l-11.36-66.56L-238.8,0h-27.36l-19.68-101.76h23.68l9.6,76,13.44-76h23.2l13.44,76Zm74.56,0h22.56V0H-117.2V-41.92h-20.48V0h-22.56V-101.76h22.56v43.04h20.48ZM-33.84,0l-3.52-18.4h-23.2L-64.08,0H-86.64L-63.6-101.76h29.12L-10.8,0ZM-57.36-35.04h16.64l-8.32-43.04ZM50.8-101.76v16.8H32.08V0H9.2V-84.96H-9.36v-16.8Zm90.4,0v16.8H122.48V0H99.6V-84.96H81.04v-16.8Zm51.04,0H214.8V0H192.24V-41.92H171.76V0H149.2V-101.76h22.56v43.04h20.48ZM252.08-16.8h32.64V0H229.2V-101.76h54.24v16.8H252.08v24.8H278.8v16.8H252.08Z"
+                  transform="matrix(-0.259, -0.966, 0.966, -0.259, 1314.016, 8340.18)"
+                  fill="#222"
+                ></path>
+              </g>
+            </svg>
           </div>
-          <!-- footer -->
+          <!-- svg -->
         </div>
+        <!-- footer -->
       </div>
-      <!-- main_8 -->
+    </div>
+    <!-- main_8 -->
     </main>
   </body>
 </html>

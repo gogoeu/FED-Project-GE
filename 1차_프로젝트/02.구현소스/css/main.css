@@ -1157,8 +1157,8 @@ header a .hdd.active {
 
 /**************************************************************************************서브페이지 */
 .s_main_1 {
-  margin: 10% auto;
-  width: 90%;
+  margin: 0% auto;
+  width: 80%;
   text-align: center;
   color: #fff;
 }
@@ -1197,4 +1197,55 @@ header a .hdd.active {
   border-radius: 30px;
   color: #fff;
   padding: 1% 3%;
+}
+.s_main_2 {
+  margin: 0 auto;
+  width: 80%;
+}
+.s_main_3 {
+  margin: 0 auto;
+  width: 80%;
+  color: #fff;
+}
+.form_1 {
+  color: #fff;
+  font-size: 1.4rem;
+}
+.form_1 ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 3% 0 1% 0;
+}
+.form_1 ul li {
+  width: 50%;
+}
+.form_1 label {
+  display: block;
+}
+.form_1 input {
+  margin: 0;
+  /* width: 100%; */
+}
+.form_1 ul li label {
+  margin-bottom: 1%;
+}
+.form_1 ul li input {
+  width: 80%;
+  padding: 2%;
+  margin-bottom: 5%;
+}
+.form_1 ul li:nth-of-type(5){
+  width: 100%;
+}
+.form_1 ul li:nth-of-type(6) {
+  margin-top: 10%;
+}
+.form_1 ul li:nth-of-type(6) input {
+  border-radius: 30px;
+  width: 20%;
+  padding:3%;
+}
+.s_main_3 span {
+  font-size: 1.76rem;
 }
